@@ -1,0 +1,556 @@
+{% load static %}
+<style>
+/*  Footer  ----------------------------------------------------------*/
+/*  Footer  ----------------------------------------------------------*/
+.footer {
+background-repeat: no-repeat;
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+background: rgba(0,0,0,.7);
+padding-top: 100px;
+padding-bottom: 100px;
+}
+.footer-logo-box{
+width:85px;
+}
+.footer-text-box{
+}
+.footer-text{
+color:#CCCCCC;
+font-size:12px;
+font-weight: 200;
+}
+.footer-text span{
+font-weight: 600;
+}
+.footer .social_links{
+display: inline-block;
+}
+.footer .social_links a {
+width:26px;
+height: 26px;
+display: inline-block;
+text-align: center;
+line-height:26px !important;
+color: #fff;
+font-size: 12px;
+}
+.footer .social_links a:hover {
+color: #40FFCE !important;
+}
+
+
+@media screen and (max-width:5120px) {
+.footer{
+padding-top: 160px;
+padding-bottom: 240px;
+}
+.footer-logo-box{
+margin-left: 108px;
+margin-bottom: 52px;
+}
+.footer-logo-box img{
+width:398px;
+}
+.footer-text-box{
+width:573px;
+margin-left:148px;
+margin-bottom: 58px;
+}
+.footer-text{
+font-size:34px;
+}
+.footer .social_links{
+display: inline-block;
+margin-left: 131px;
+}
+.footer .social_links a {
+font-size: 34px;
+width:61px;
+height: 31px;
+}
+}
+
+@media screen and (max-width:2560px) {
+.footer{
+padding-top: 140px;
+padding-bottom: 180px;
+}
+.footer-logo-box{
+margin-left: 108px;
+margin-bottom: 40px;
+}
+.footer-logo-box img{
+width:340px;
+}
+.footer-text-box{
+width:513px;
+margin-left:148px;
+margin-bottom: 56px;
+}
+.footer-text{
+font-size:30px;
+}
+.footer .social_links{
+display: inline-block;
+margin-left: 131px;
+}
+.footer .social_links a {
+font-size: 30px;
+width:61px;
+height: 31px;
+}
+}
+
+@media screen and (max-width:1920px) {
+.footer{
+padding-top: 140px;
+padding-bottom: 180px;
+}
+.footer-logo-box{
+margin-left: 120px;
+margin-bottom: 40px;
+}
+.footer-logo-box img{
+width:242px;
+}
+.footer-text-box{
+width:373px;
+margin-left:148px;
+margin-bottom: 40px;
+}
+.footer-text{
+font-size:22px;
+}
+.footer .social_links{
+display: inline-block;
+margin-left: 138px;
+}
+.footer .social_links a {
+font-size: 22px;
+width:43px;
+height: 31px;
+}
+}
+
+@media screen and (max-width:1600px) {
+.footer{
+padding-top: 60px;
+padding-bottom: 120px;
+}
+.footer-logo-box{
+margin-left: 42px;
+margin-bottom: 28px;
+}
+.footer-logo-box img{
+width:236px;
+}
+.footer-text-box{
+width:306px;
+margin-left:73px;
+margin-bottom: 28px;
+}
+.footer-text{
+font-size:18px;
+}
+.footer .social_links{
+display: inline-block;
+margin-left: 68px;
+}
+.footer .social_links a {
+font-size: 18px;
+width:40px;
+height: 26px;
+}
+
+}
+
+
+
+@media screen and (max-width:1366px) {
+.footer{
+padding-top: 60px;
+padding-bottom: 120px;
+}
+.footer-logo-box{
+margin-left: 45px;
+margin-bottom: 28px;
+}
+.footer-logo-box img{
+width:186px;
+}
+.footer-text-box{
+width:266px;
+margin-left:67px;
+margin-bottom: 28px;
+}
+.footer-text{
+font-size:16px;
+}
+.footer .social_links{
+display: inline-block;
+margin-left: 62px;
+}
+.footer .social_links a {
+font-size: 14px;
+}
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1280px) {
+.footer{
+padding-top: 60px;
+padding-bottom: 120px;
+}
+.footer-logo-box{
+margin-left: 55px;
+margin-bottom: 28px;
+}
+.footer-logo-box img{
+width:172px;
+}
+.footer-text-box{
+width:266px;
+margin-left:77px;
+margin-bottom: 28px;
+}
+.footer-text{
+font-size:16px;
+}
+.footer .social_links{
+display: inline-block;
+margin-left: 71px;
+
+}
+.footer .social_links a {
+font-size: 14px;
+width: 31px;
+    height: 26px;
+}
+
+}
+
+@media screen and (max-width:1024px) {
+
+.footer{
+padding-top:120px;
+padding-bottom: 200px;
+}
+.footer-logo-box{
+margin-left: 59px;
+margin-bottom: 28px;
+}
+.footer-logo-box img{
+width:237px;
+}
+.footer-text-box{
+width:332px;
+margin-left:85px;
+margin-bottom: 28px;
+}
+.footer-text{
+font-size:20px;
+
+}
+.footer .social_links{
+margin-left: 78px;
+
+}
+.footer .social_links a {
+font-size: 20px;
+width: 42px;
+}
+}
+
+@media screen and (max-width:834px) {
+.footer-logo-box{
+margin-left: 42px;
+margin-bottom: 28px;
+}
+.footer-logo-box img{
+width:282px;
+}
+.footer-text-box{
+margin-left:54px;
+margin-bottom: 28px;
+}
+.footer-text{
+font-size:17px;
+}
+.footer .social_links{
+margin-left: 52px;
+font-size: 17px;
+}
+}
+
+@media screen and (max-width:768px) {
+.footer{
+padding-top: 80px;
+padding-bottom: 140px;
+}
+.footer-logo-box{
+margin-left: 42px;
+margin-bottom: 28px;
+}
+.footer-logo-box img{
+width:177px;
+}
+.footer-text-box{
+width:282px;
+margin-left:62px;
+margin-bottom: 28px;
+}
+.footer-text{
+font-size:17px;
+}
+.footer .social_links{
+margin-left: 58px;
+}
+.footer .social_links a {
+font-size: 17px;
+}
+}
+
+@media screen and (max-width:414px) {
+.footer-logo-box{
+margin-left: 12px;
+margin-bottom: 28px;
+}
+.footer-logo-box img{
+width:106px;
+}
+.footer-text-box{
+width:232px;
+margin-left: 21px;
+margin-bottom: 28px;
+}
+.footer-text{
+font-size:14px;
+}
+.footer .social_links{
+margin-left: 10px;
+}
+.footer .social_links a {
+font-size: 12px;
+width: 29px;
+}
+}
+
+@media screen and (max-width:375px) {
+.footer-logo-box img{
+width:100px;
+}
+.footer .social_links{
+margin-left: 10px;
+}
+.footer .social_links a {
+font-size: 12px;
+width: 29px;
+}
+}
+
+@media screen and (max-width:320px) {
+.footer-logo-box img{
+width:85px;
+}
+.footer-text-box{
+width:222px;
+}
+.footer-text{
+font-size:13px;
+}
+}
+
+/*  Back-Top  ----------------------------------------------------------*/
+/*  Back-Top  ----------------------------------------------------------*/
+.back-top{
+content: '';
+display: inline-block;
+margin-top: -1px;
+margin-right: 2px;
+margin-left: -4px;
+width: 6px;
+height: 6px;
+-webkit-transform: rotate(226deg);
+transform: rotate(226deg);
+border-top: 0px;
+border-bottom: 1px solid white;
+border-right: 1px solid white;
+border-left: 0px;
+}
+
+.back-top:hover{
+border-bottom: 1px solid #40FFCE;
+border-right: 1px solid #40FFCE;
+}
+
+
+@media screen and (max-width:2880px) {
+.back-top{
+    margin-left: 72px;
+width: 14px;
+height: 14px;
+border-bottom: 3px solid white;
+border-right: 3px solid white;
+}
+}
+@media screen and (max-width:2560px) {
+.back-top{
+    margin-left: 43px;
+width: 14px;
+height: 14px;
+border-bottom: 3px solid white;
+border-right: 3px solid white;
+}
+}
+
+@media screen and (max-width:1600px) {
+.back-top{
+margin-left: 5px;
+width: 8px;
+height: 8px;
+border-bottom: 1px solid white;
+border-right: 1px solid white;
+}
+}
+
+
+@media screen and (max-width:1920px) {
+.back-top{
+    margin-left: -5px;
+width: 8px;
+width: 11px;
+height: 11px;
+border-bottom: 2px solid white;
+border-right: 2px solid white;
+}
+}
+
+@media screen and (max-width:1600px) {
+.back-top{
+margin-left: 52px;
+width: 8px;
+height: 8px;
+border-bottom: 1px solid white;
+border-right: 1px solid white;
+}
+}
+
+@media screen and (max-width:1440px) {
+.back-top{
+margin-left: 40px;
+width: 8px;
+height: 8px;
+}
+}
+
+@media screen and (max-width:1366px) {
+.back-top{
+margin-left: 24px;
+width: 8px;
+height: 8px;
+}
+}
+
+@media screen and (max-width:1280px) {
+.back-top{
+margin-left: 24px;
+width: 8px;
+height: 8px;
+}
+}
+
+@media screen and (max-width:1024px) {
+.back-top{
+    margin-left: -28px;
+width: 8px;
+height: 8px;
+}
+}
+
+
+
+@media screen and (max-width:834px) {
+.back-top{
+margin-left: 0px;
+width: 8px;
+height: 8px;
+}
+}
+
+@media screen and (max-width:768px) {
+.back-top{
+margin-left: -11px;
+}
+}
+
+@media screen and (max-width:414px) {
+.back-top{
+margin-left: -2px;
+width: 6px;
+height: 6px;
+}
+}
+
+@media screen and (max-width:375px) {
+}
+
+@media screen and (max-width:320px) {
+.back-top{
+margin-left: -4px;
+}
+}
+
+
+
+</style>
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12">
+                <div class="footer-logo-box">
+                    <a href="index.html">
+                        <img src="{% static 'img/logo/logo-soar-04-01.png' %}">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="footer-text-box">
+                    <p class="footer-text">
+                        <span>S.O.A.R.</span> es una compañia registrada en Valdivia · Chile | 2020
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-11">
+                <div class="social_links">
+                    <a target="_blank" href="https://www.linkedin.com/in/felipe-zapata-valenzuela-2b503025/?originalSubdomain=cl"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+                    <a target="_blank" href="https://www.facebook.com/soar.valdivia.1/"><i class="fa fa-facebook"></i> </a>
+                    <a target="_blank" href="https://www.instagram.com/soar_ambiental/"><i class="fa fa-instagram"></i> </a>
+                    <a target="_blank" href="/tarjeta/felipe/"><i class="fa fa-id-card-o"></i> </a>
+                    <a target="_blank" href="{% url 'soar360' %}"><i class="fa fa-bandcamp"></i> </a>
+                    <a target="_blank" href="{% url 'fotogrametria' %}"><i class="fa fa-envira"></i> </a>
+                    <a target="_blank" href="{% url 'logo3d' %}"><i class="fa fa-cube"></i> </a>
+      
+                </div>
+            </div>
+            <div class="col-1">
+                    <a class="back-top" href="#top" id="goTop"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type='text/javascript'>
+$('#goTop').on('click', function(e){
+$("html, body").animate({scrollTop: $("#top").offset().top}, 500);
+});
+</script>

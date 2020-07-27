@@ -1,0 +1,109 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Roboto Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <title>{% block head_title %}S.O.A.R. - CL{% endblock %}</title>
+  {% block extra_head %}
+  {% endblock %}
+  <!-- Font Awesome -->
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+
+
+  <link href="{% static 'css/mdb.min475.css' %}" rel="stylesheet">
+
+  <link href="{% static 'css/mdb.ecommerce.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+/>
+
+  <!-- Your custom styles (optional) -->
+  <link href="{% static 'css/style.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/fonts.css' %}" rel="stylesheet">
+  <style type="text/css">
+    html,
+    body,
+    header,
+    .carousel {
+      height: 100%;
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #1C2331!important;
+            }
+        }
+
+.carousel,.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item,.view,body,html{height:100%}.navbar{background-color:rgba(0,0,0,.2)}.page-footer,.top-nav-collapse{background-color:#1C2331}@media only screen and (max-width:768px){.navbar{background-color:#1C2331}}
+  </style>
+
+
+<style type="text/css">
+.message-window{
+  position: absolute;
+    top: 93px;
+    width: 100%;
+}
+.skin-light .mt-70 {
+    margin-top: 140px;
+}
+.skin-light .mt-83 {
+    margin-top: 83px;
+}
+.alert {
+    border-radius: 0;
+    padding: .75rem 0;
+    text-align: center !important;
+}
+.alert-dismissible {
+    padding-right: 0;
+}
+</style>
+</head>
+{% include "navbar.html" %}
+
+<body class="">
+            <!--<img src="{% static '/img/logo/logo-nav01-01.svg' %}" width="200px">-->
+
+<div class="message-window">
+    {% if messages %}
+        {% for message in messages %}
+        <div class="text-center animate__animated fadeInDown alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            <b>{{ message }}</b>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        {% endfor %}
+    {% endif %}
+    </div>
+
+  {% block content %}
+  {% endblock content %}
+  {% include 'footer.html' %}
+  {% include 'scripts.html' %}
+</body>
+</html
+{% if request.user.is_authenticated %}}
+{% else %}
+
+HB
+
+{% endif %}

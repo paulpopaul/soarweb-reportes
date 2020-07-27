@@ -1,0 +1,11 @@
+
+
+{% block content %}
+
+{% for post in object_list %}
+<h1>{{post.title}}</h1>
+<h1>{{post.body}}</h1>
+{% endfor %}
+
+
+{% endblock %}

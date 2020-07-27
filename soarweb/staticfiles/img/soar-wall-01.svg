@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="4000px" viewBox="0 0 100% 4000px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Free charts kit</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="100%" height="100%"></rect>
+        <pattern id="pattern-2" width="80" height="40" x="-80" y="-40" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-3"></use>
+        </pattern>
+        <image id="image-3" width="80" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoCAYAAABpYH0BAAAABGdBTUEAALGN5fIAKQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAUKADAAQAAAABAAAAKAAAAADbisV7AAAAaElEQVRoBe3WsQ0AIAwDsPL/yAv8CUdkinD3SJG7ZMYRIECAAAECBCoF1px9K5srTYAAAQIECBAgkAjYgYmeLAECBAgQIECgV8AO7P2d5gQIECBAgACBRMAOTPRkCRAgQIAAAQIEvhV4bOcI3XwrCKQAAAAASUVORK5CYII="></image>
+        <pattern id="pattern-4" width="80" height="40" x="-80" y="-40" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-5"></use>
+        </pattern>
+        <image id="image-5" width="80" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoCAYAAABpYH0BAAAABGdBTUEAALGN5fIAKQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAUKADAAQAAAABAAAAKAAAAADbisV7AAAAm0lEQVRoBe3aoRWAMBAFwYP+HS3QJ4QWspKJ3xPzvsyMty9wX8+5Xys/AYBxBwABRoGYWyDAKBBzCwQYBWJugQCjQMwtEGAUiLkFAowCMbdAgFEg5hYIMArE3AIBRoGYWyDAKBBzCwQYBWJugQCjQMwtEGAUiLkFAowCMbdAgFEg5hYIMArE3AIBRoGYWyDAKBDzY9ZX/Xjj1/kLvW0Euo6/WlEAAAAASUVORK5CYII="></image>
+        <pattern id="pattern-6" width="80" height="40" x="-80" y="-40" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-7"></use>
+        </pattern>
+        <image id="image-7" width="80" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoCAYAAABpYH0BAAAABGdBTUEAALGN5fIAKQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAUKADAAQAAAABAAAAKAAAAADbisV7AAAAVElEQVRoBe3QMQ0AAAgDsPl/sYDPoYOkldAEAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwICB9wM7PTY5Ajf41N9TAAAAAElFTkSuQmCC"></image>
+        <filter x="-32.4%" y="-21.6%" width="164.8%" height="143.2%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="42" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-36.4%" y="-36.7%" width="172.8%" height="173.5%" filterUnits="objectBoundingBox" id="filter-9">
+            <feGaussianBlur stdDeviation="42" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-36.1%" y="-28.6%" width="172.2%" height="157.1%" filterUnits="objectBoundingBox" id="filter-10">
+            <feGaussianBlur stdDeviation="42" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-58.9%" y="-58.9%" width="217.8%" height="217.8%" filterUnits="objectBoundingBox" id="filter-11">
+            <feGaussianBlur stdDeviation="42" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-58.9%" y="-58.9%" width="217.8%" height="217.8%" filterUnits="objectBoundingBox" id="filter-12">
+            <feGaussianBlur stdDeviation="42" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-47.0%" y="-42.3%" width="194.0%" height="184.6%" filterUnits="objectBoundingBox" id="filter-13">
+            <feGaussianBlur stdDeviation="42" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-55.6%" y="-50.0%" width="211.1%" height="200.0%" filterUnits="objectBoundingBox" id="filter-14">
+            <feGaussianBlur stdDeviation="42" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Free-charts-kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD">
+            <g id="BG">
+                <use fill="#041611" xlink:href="#path-1"></use>
+                <use fill-opacity="0.1" fill="url(#pattern-2)" xlink:href="#path-1"></use>
+                <use fill-opacity="0.15" fill="url(#pattern-4)" xlink:href="#path-1"></use>
+                <use fill="url(#pattern-6)" xlink:href="#path-1"></use>
+            </g>
+            <path d="M1696.71287,531 C1820.69418,531 1990.13816,314.688406 1990.13816,190.523279 C1990.13816,66.3581523 2065.80446,-52 1941.82315,-52 C1817.84184,-52 1644.86261,65.7680714 1644.86261,189.933198 C1644.86261,314.098325 1572.73155,531 1696.71287,531 Z" id="Oval" fill="#40FFCE" opacity="0.071358817" filter="url(#filter-8)"></path>
+            <path d="M1643.53512,1878 C1734.81683,1878 1857.2246,1851.26358 1857.2246,1759.9038 C1857.2246,1668.54402 1996.22499,1535 1904.94328,1535 C1813.66157,1535 1605.36018,1535.68579 1605.36018,1627.04557 C1605.36018,1718.40535 1552.25341,1878 1643.53512,1878 Z" id="Oval" fill="#40FFCE" opacity="0.0661039807" filter="url(#filter-9)"></path>
+            <path d="M123.5,808 C219.873689,808 298,729.873689 298,633.5 C298,589.198348 216.874866,585.78154 177,534 C130.131194,473.136123 120.072037,367 68,367 C-28.3736888,367 -51,537.126311 -51,633.5 C-51,729.873689 27.1263112,808 123.5,808 Z" id="Oval" fill="#40FFCE" opacity="0.1" filter="url(#filter-10)"></path>
+            <circle id="Oval" fill="#E285FD" opacity="0.204357329" filter="url(#filter-11)" cx="455" cy="132" r="107"></circle>
+            <circle id="Oval" fill="#E285FD" opacity="0.0683826265" filter="url(#filter-12)" cx="307" cy="772" r="107"></circle>
+            <path d="M1639.44069,665 C1709.27196,665 1744.61099,592.976792 1744.61099,523.095238 C1744.61099,453.213684 1821.53239,367 1751.70112,367 C1681.86985,367 1513,468.5867 1513,538.468254 C1513,608.349808 1569.60943,665 1639.44069,665 Z" id="Oval" fill="#E285FD" opacity="0.102864583" filter="url(#filter-13)"></path>
+            <path d="M178,1857 C237.094468,1857 267,1796.09447 267,1737 C267,1677.90553 332.094468,1605 273,1605 C213.905532,1605 71,1690.90553 71,1750 C71,1809.09447 118.905532,1857 178,1857 Z" id="Oval" fill="#E285FD" opacity="0.157482329" filter="url(#filter-14)"></path>
+        </g>
+    </g>
+</svg>

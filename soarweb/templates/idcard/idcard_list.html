@@ -1,0 +1,24 @@
+
+{% load static %}
+
+{% block content %}
+{% for idcard in idcard_list %}
+<a href="{% url 'idcard:idcard_detail' slug=idcard.slug %}"><h1>{{idcard.first_name}}</h1></a>
+{% endfor %}
+
+{% endblock %}
+
+
+{% for idcard in light %}
+<div style="background:#ccc;" class="">
+{{idcard.slug}}
+{{idcard.first_name}}
+</div>
+{% endfor %}
+
+{% for idcard in dark %}
+<div style="background:#000;color:#fff;" class="">
+{{idcard.slug}}
+{{idcard.first_name}}
+</div>
+{% endfor %}

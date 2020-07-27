@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SOAR | CL</title>
+        <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            color: #00C6A8;
+        }
+        .bodies{
+            margin: 6px;
+        }
+        .text1{
+            font-weight: 800;
+        }
+        .text2{
+            padding: 2px;
+            font-weight: 400;
+            font-size: 12px;
+        }
+        .box{
+            padding-top: 18px;
+            padding-bottom: 16px;
+            background: #00C6A8;
+            color: #fff;
+            text-align: center;
+        }
+        .box1{
+            padding: 20px;
+            background: #f1f1f1;
+        }
+        .box2{
+            color: #fff;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            font-size: 12px;
+            background: #000;
+            text-align: center;
+        }
+        .box3{
+            background:#00C6A8;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            color: #fff;
+            text-align: center;
+           
+        }
+        </style>
+    </head>
+    <body class="bodies">
+        <div class="box">
+            <p class="text1">Web Mail SOAR</p>
+        </div>
+        <div class="box1">
+            <br>
+            <h4>Mensaje:</h4>
+            <p>{{ message }}</p>
+            <br>
+            <h4>De:</h4>
+            <p>{{ first_name }} {{ last_name }}</p>
+            <br>
+            <h4>Email:</h4>
+            <p>{{ email }}</p>
+                <br>
+            <h4>Teléfono:</h4>
+            <p>{{ phone }}</p>
+            <br>
+        </div>
+        <div class="box2">
+            <div style="text-align:center"><a href="http://www.soar.cl" target="_blank"><img src="https://raw.githubusercontent.com/paulpopaul/email-signature/master/logo-soar-04.png" border="0" width="140"/></a></div>
+                <!--<p class="text2">S.O.A.R. 2020</p>
+                <p class="text2">++56 9 9811 4750</p>-->
+            </div>
+        <div class="box3">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td align="center">
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td class="img-center" style="font-size:0pt; line-height:0pt; text-align:center" width="38"><a href="https://www.facebook.com/soar.valdivia.1/" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/facebook-512.png" border="0" width="28" height="28" alt="" /></a></td>
+                                <td class="img-center" style="font-size:0pt; line-height:0pt; text-align:center" width="38"><a href="https://www.instagram.com/soar_ambiental/" target="_blank"><img src="https://cdn2.iconfinder.com/data/icons/social-media-free-20/32/online_social_media_instagram-512.png" border="0" width="28" height="28" alt="" /></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

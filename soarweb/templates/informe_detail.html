@@ -1,0 +1,1865 @@
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link href="{% static 'css/bootstrap431.min.css' %}" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+
+
+  <link href="{% static 'css/mdb.min475.css' %}" rel="stylesheet">
+
+  <link href="{% static 'css/mdb.ecommerce.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/animated.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+  </style>
+</head>
+
+<body class="fixed-sn white-skin">
+
+  <!-- Main Navigation -->
+  <header>
+
+    <!-- Sidebar navigation -->
+    <div id="slide-out" class="side-nav sn-bg-4 fixed">
+      <ul class="custom-scrollbar">
+
+        <!-- Logo -->
+        <li class="logo-sn waves-effect py-3">
+
+          <div class="text-center">
+            <a href="/informe_list" >
+
+            <img class="pl-0" src="{% static '/img/logo/logo-nav01-01.svg' %}" width="142px">
+        </a>
+
+          </div>
+        </li>
+
+        <!-- Search Form -->
+        <li>
+          <form class="search-form" role="search">
+            <div class="md-form mt-0 waves-light">
+              <input type="text" class="form-control py-2" placeholder="Buscar">
+            </div>
+          </form>
+        </li>
+       
+        <!-- Side navigation links -->
+        <li>
+          <ul class="collapsible collapsible-accordion">
+
+            <li>
+              <a href="/informe_list" class="collapsible-header waves-effect arrow-r">
+                <i class="w-fa fas fa-tachometer-alt"></i>Informes<i class="fas fa-angle-down rotate-icon"></i>
+              </a>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="../dashboards/v-1.html" class="waves-effect">Version 1</a>
+                  </li>
+                  <li>
+                    <a href="../dashboards/v-2.html" class="waves-effect">Version 2</a>
+                  </li>
+                  <li>
+                    <a href="../dashboards/v-3.html" class="waves-effect">Version 3</a>
+                  </li>
+                  <li>
+                    <a href="../dashboards/v-4.html" class="waves-effect">Version 4</a>
+                  </li>
+                  <li>
+                    <a href="../dashboards/v-5.html" class="waves-effect">Version 5</a>
+                  </li>
+                  <li>
+                    <a href="../dashboards/v-6.html" class="waves-effect">Version 6</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="collapsible-header waves-effect arrow-r">
+                <i class="w-fa fas fa-tachometer-alt"></i>Plan de Vuelo<i class="fas fa-angle-down rotate-icon"></i>
+              </a>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="../pages/login.html" class="waves-effect">Login</a>
+                  </li>
+                  <li>
+                    <a href="../pages/register.html" class="waves-effect">Register</a>
+                  </li>
+                  <li>
+                    <a href="../pages/pricing.html" class="waves-effect">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="../pages/about.html" class="waves-effect">About us</a>
+                  </li>
+                  <li>
+                    <a href="../pages/single.html" class="waves-effect">Single post</a>
+                  </li>
+                  <li>
+                    <a href="../pages/post.html" class="waves-effect">Post listing</a>
+                  </li>
+                  <li>
+                    <a href="../pages/landing.html" class="waves-effect">Landing page</a>
+                  </li>
+                  <li>
+                    <a href="../pages/customers.html" class="waves-effect">Customers</a>
+                  </li>
+                  <li>
+                    <a href="../pages/invoice.html" class="waves-effect">Invoice</a>
+                  </li>
+                  <li>
+                    <a href="../pages/page-creator.html" class="waves-effect">Page Creator</a>
+                  </li>
+                  <li>
+                    <a href="../pages/support.html" class="waves-effect">Support</a>
+                  </li>
+                  <li>
+                    <a href="../pages/chat.html" class="waves-effect">Chat</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="collapsible-header waves-effect arrow-r">
+                <i class="w-fa fas fa-user"></i>Perfil<i class="fas fa-angle-down rotate-icon"></i>
+              </a>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="../profile/basic-1.html" class="waves-effect">Basic 1</a>
+                  </li>
+                  <li>
+                    <a href="../profile/basic-2.html" class="waves-effect">Basic 2</a>
+                  </li>
+                  <li>
+                    <a href="../profile/extended.html" class="waves-effect">Extended</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          <li>
+              <a class="collapsible-header waves-effect arrow-r">
+                <i class="w-fa fas fa-upload"></i>Subir Documento<i class="fas fa-angle-down rotate-icon"></i>
+              </a>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="../profile/basic-1.html" class="waves-effect">Basic 1</a>
+                  </li>
+                  <li>
+                    <a href="../profile/basic-2.html" class="waves-effect">Basic 2</a>
+                  </li>
+                  <li>
+                    <a href="../profile/extended.html" class="waves-effect">Extended</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+           <li>
+              <a href="#" class="collapsible-header waves-effect arrow-r">
+                <i class="w-fa fas fa-id-card"></i>Tarjetas de Presentación<i class="fas fa-angle-down rotate-icon"></i>
+              </a>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="../css/grid.html" class="waves-effect">Grid system</a>
+                  </li>
+                  <li>
+                    <a href="../css/media.html" class="waves-effect">Media object</a>
+                  </li>
+                  <li>
+                    <a href="../css/utilities.html" class="waves-effect">Utilities / helpers</a>
+                  </li>
+                  <li>
+                    <a href="../css/code.html" class="waves-effect">Code</a>
+                  </li>
+                  <li>
+                    <a href="../css/icons.html" class="waves-effect">Icons</a>
+                  </li>
+                  <li>
+                    <a href="../css/images.html" class="waves-effect">Images</a>
+                  </li>
+                  <li>
+                    <a href="../css/typography.html" class="waves-effect">Typography</a>
+                  </li>
+                  <li>
+                    <a href="../css/animations.html" class="waves-effect">Animations</a>
+                  </li>
+                  <li>
+                    <a href="../css/colors.html" class="waves-effect">Colors</a>
+                  </li>
+                  <li>
+                    <a href="../css/hover.html" class="waves-effect">Hover effects</a>
+                  </li>
+                  <li>
+                    <a href="../css/masks.html" class="waves-effect">Masks</a>
+                  </li>
+                  <li>
+                    <a href="../css/shadows.html" class="waves-effect">Shadows</a>
+                  </li>
+                  <li>
+                    <a href="../css/skins.html" class="waves-effect">Skins</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          <li>
+            <a class="collapsible-header waves-effect arrow-r">
+              <i class="w-fa fas fa-list"></i>Inventario<i class="fas fa-angle-down rotate-icon"></i>
+            </a>
+
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="../components/buttons.html" class="waves-effect">Buttons</a>
+                  </li>
+                  <li>
+                    <a href="../components/cards.html" class="waves-effect">Cards</a>
+                  </li>
+                  <li>
+                    <a href="../components/collapse.html" class="waves-effect">Collapse</a>
+                  </li>
+                  <li>
+                    <a href="../components/date.html" class="waves-effect">Date picker</a>
+                  </li>
+                  <li>
+                    <a href="../components/list.html" class="waves-effect">List group</a>
+                  </li>
+                  <li>
+                    <a href="../components/panels.html" class="waves-effect">Panels</a>
+                  </li>
+                  <li>
+                    <a href="../components/pagination.html" class="waves-effect">Pagination</a>
+                  </li>
+                  <li>
+                    <a href="../components/popovers.html" class="waves-effect">Popovers</a>
+                  </li>
+                  <li>
+                    <a href="../components/progress.html" class="waves-effect">Progress bars</a>
+                  </li>
+                  <li>
+                    <a href="../components/stepper.html" class="waves-effect">Stepper</a>
+                  </li>
+                  <li>
+                    <a href="../components/tabs.html" class="waves-effect">Tabs & pills</a>
+                  </li>
+                  <li>
+                    <a href="../components/tags.html" class="waves-effect">Tags, labels & badges</a>
+                  </li>
+                  <li>
+                    <a href="../components/time.html" class="waves-effect">Time picker</a>
+                  </li>
+                  <li>
+                    <a href="../components/tooltips.html" class="waves-effect">Tooltips</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="/home" class="collapsible-header waves-effect arrow-r">
+                <i class="w-fa fas fa-home"></i>Volver a Inicio<i class="fas fa-angle-down rotate-icon"></i>
+              </a>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="../components/buttons.html" class="waves-effect">Buttons</a>
+                  </li>
+                  <li>
+                    <a href="../components/cards.html" class="waves-effect">Cards</a>
+                  </li>
+                  <li>
+                    <a href="../components/collapse.html" class="waves-effect">Collapse</a>
+                  </li>
+                  <li>
+                    <a href="../components/date.html" class="waves-effect">Date picker</a>
+                  </li>
+                  <li>
+                    <a href="../components/list.html" class="waves-effect">List group</a>
+                  </li>
+                  <li>
+                    <a href="../components/panels.html" class="waves-effect">Panels</a>
+                  </li>
+                  <li>
+                    <a href="../components/pagination.html" class="waves-effect">Pagination</a>
+                  </li>
+                  <li>
+                    <a href="../components/popovers.html" class="waves-effect">Popovers</a>
+                  </li>
+                  <li>
+                    <a href="../components/progress.html" class="waves-effect">Progress bars</a>
+                  </li>
+                  <li>
+                    <a href="../components/stepper.html" class="waves-effect">Stepper</a>
+                  </li>
+                  <li>
+                    <a href="../components/tabs.html" class="waves-effect">Tabs & pills</a>
+                  </li>
+                  <li>
+                    <a href="../components/tags.html" class="waves-effect">Tags, labels & badges</a>
+                  </li>
+                  <li>
+                    <a href="../components/time.html" class="waves-effect">Time picker</a>
+                  </li>
+                  <li>
+                    <a href="../components/tooltips.html" class="waves-effect">Tooltips</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!--<li>
+              <a class="collapsible-header waves-effect arrow-r">
+                <i class="w-fa far fa-check-square"></i>Forms<i class="fas fa-angle-down rotate-icon"></i>
+              </a>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="../forms/basic.html" class="waves-effect">Basic</a>
+                  </li>
+                  <li>
+                    <a href="../forms/extended.html" class="waves-effect">Extended</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="collapsible-header waves-effect arrow-r">
+                <i class="w-fa fas fa-table"></i>Tables<i class="fas fa-angle-down rotate-icon"></i>
+              </a>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="../tables/basic.html" class="waves-effect">Basic</a>
+                  </li>
+                  <li>
+                    <a href="../tables/extended.html" class="waves-effect">Extended</a>
+                  </li>
+                  <li>
+                    <a href="../tables/datatables.html" class="waves-effect">DataTables.net</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="collapsible-header waves-effect arrow-r">
+                <i class="w-fa fas fa-map"></i>Maps<i class="fas fa-angle-down rotate-icon"></i>
+              </a>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="../maps/google.html" class="waves-effect">Google Maps</a>
+                  </li>
+                  <li>
+                    <a href="../maps/full.html" class="waves-effect">Full screen map</a>
+                  </li>
+                  <li>
+                    <a href="../maps/vector.html" class="waves-effect">Vector world map</a>
+                  </li>
+                </ul>
+              </div>
+            </li> 
+  
+            <li>
+              <a href="../alerts/alerts.html" class="collapsible-header waves-effect"><i class="w-fa far fa-bell"></i>Alerts</a>
+            </li>
+            <li>
+              <a href="../modals/modals.html" class="collapsible-header waves-effect"><i class="w-fa fas fa-bolt"></i>Modals</a>
+            </li>
+            <li>
+              <a href="../charts/charts.html" class="collapsible-header waves-effect"><i class="w-fa fas fa-chart-pie"></i>Charts</a>
+            </li>
+            <li>
+              <a href="../calendar/calendar.html" class="collapsible-header waves-effect"><i class="w-fa far fa-calendar-check"></i>Calendar</a>
+            </li>
+            <li>
+              <a href="../sections/sections.html" class="collapsible-header waves-effect"><i class="w-fa fas fa-th-large"></i>Sections</a>
+            </li>
+
+          </ul>
+        </li>-->
+        <!-- Side navigation links -->
+
+      </ul>
+      <div class="sidenav-bg mask-strong"></div>
+    </div>
+    <!-- Sidebar navigation -->
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav">
+
+      <!-- SideNav slide-out button -->
+      <div class="float-left">
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
+      </div>
+
+      <!-- Breadcrumb -->
+      <div class="breadcrumb-dn mr-auto">
+        <p>Soar v.1</p>
+      </div>
+
+      <div class="d-flex change-mode">
+
+        <div class="ml-auto mb-0 mr-3 change-mode-wrapper">
+          <button class="btn btn-outline-black btn-sm" id="dark-mode">Cambiar Modo</button>
+        </div>  
+
+        <!-- Navbar links -->
+        <ul class="nav navbar-nav nav-flex-icons ml-auto">
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown notifications-nav">
+            <a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="badge red">1</span> <i class="fas fa-bell"></i>
+              <span class="d-none d-md-inline-block">Notificaciones</span>
+            </a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">
+                <i class="far fa-money-bill-alt mr-2" aria-hidden="true"></i>
+                <span>New order received</span>
+                <span class="float-right"><i class="far fa-clock" aria-hidden="true"></i> 13 min</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="far fa-money-bill-alt mr-2" aria-hidden="true"></i>
+                <span>New order received</span>
+                <span class="float-right"><i class="far fa-clock" aria-hidden="true"></i> 33 min</span>
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-chart-line mr-2" aria-hidden="true"></i>
+                <span>Your campaign is about to end</span>
+                <span class="float-right"><i class="far fa-clock" aria-hidden="true"></i> 53 min</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect"><i class="fas fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contacto</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect"><i class="far fa-comments"></i> <span class="clearfix d-none d-sm-inline-block">Soporte</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle waves-effect" href="#" id="userDropdown" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Perfil</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+              <a class="dropdown-item" href="{% url 'account_logout' %}">Salir</a>
+              <a class="dropdown-item" href="#">Mi Cuenta</a>
+            </div>
+          </li>
+
+        </ul>
+        <!-- Navbar links -->
+
+      </div>
+
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Fixed button -->
+    <div class="fixed-action-btn clearfix d-none d-xl-block" style="bottom: 0px; right: 24px;">
+      
+      <a class="btn-floating btn-lg red">
+        <i class="fas fa-pencil-alt"></i>
+      </a>
+
+      <ul class="list-unstyled">
+        <li><a class="btn-floating red"><i class="fas fa-star"></i></a></li>
+        <li><a class="btn-floating yellow darken-1"><i class="fas fa-user"></i></a></li>
+        <li><a class="btn-floating green"><i class="fas fa-envelope"></i></a></li>
+        <li><a class="btn-floating blue"><i class="fas fa-shopping-cart"></i></a></li>
+      </ul>
+
+    </div>
+    <!-- Fixed button -->
+
+  </header>
+  <!-- Main Navigation -->
+
+  <!-- Main layout -->
+  <main>
+
+    <div class="container-fluid">
+  <!-- Section: Cascading panels -->
+
+
+  <!-- Section: Reverse cascade -->
+  <section>
+    <h3 class="mb-4 dark-grey-text font-weight-bold"><strong>Informe</strong></h3>
+
+    <div class="row mb-5 pb-4">
+      <!-- Card -->
+      <div class="card card-cascade wider reverse my-4 mx-3 card-transparent">
+
+        <!-- Card image -->
+        <div class="view view-cascade overlay">
+          <img src="{% static '/img/wall-1x.jpg' %}" class="card-img-top">
+          <a href="#!">
+            <div class="mask"></div>
+          </a>
+        </div>
+        <!-- Card image -->
+
+        <!-- Card content -->
+        <div class="card-body card-body-cascade text-center">
+          <!-- Title -->
+          <h4 class="card-title"><strong>Buque Surabaya Express</strong></h4>
+          <h5 class="blue-text"><strong>Valdivia · Corral</strong></h5>
+
+          <p class="card-text">
+            
+          </p>
+
+          <div class="card-footer text-muted text-center">
+            <p>10 de julio de 2019 
+            </p>
+          </div>
+
+        </div>
+        <!-- Card content -->
+
+      </div>
+      <!-- Card -->
+
+    </div>
+
+  </section>
+
+<div class="container">
+
+  <style>
+    .map-container-section {
+      overflow:hidden;
+      padding-bottom:300px;
+      position:relative;
+      height:0;
+    }
+    .map-container-section iframe {
+      left:0;
+      top:0;
+      height:300px;
+      width:100%;
+      position:absolute;
+    }
+  </style>
+
+
+
+</div>
+
+
+<!--Google Maps-->
+  <!-- Section: Reverse cascade -->
+  <div class="container-fluid z-depth-1   card my-5 p-5">
+
+
+    <!-- Section -->
+    <section class="pt-4">
+  
+      <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">INFORME AMBIENTAL 
+        </h6>
+      <h3 class="font-weight-bold text-center dark-grey-text pb-2">OXXEAN
+        SINIESTRO M/N </h3>
+      <hr class="w-header my-4">
+      <p class="lead text-center text-muted pt-2 mb-5">COYHAIQUE - NAVIMAG</p>
+  
+      <div class="row d-flex justify-content-center">
+  
+        <div class="col-md-6 col-xl-4">
+          <h5 class="font-weight-normal"><a class="dark-grey-text" href="#">RESUMEN</a></h5>
+        </div>
+  
+        <div class="col-md-6">
+          <p class="text-muted mb-5 pb-2">Con fecha 10 de julio de 2019 se procede a realizar inspección ambiental a la M/N “Coyhaique” con el objetivo de recopilar, analizar, describir e inferir en base a los hechos visualizados de manera cualitativa, los potenciales efectos medioambientales del varado de esta nave. La M/N fue trasladada desde el sitio del siniestro a Puerto Laguna, coordenadas 601.286 E – 4.984.425 S WGS84 H18S, por decisión de su capitán en conjunto con los encargados de las operaciones de rescate de la empresa Oxxean y bajo la supervisión de la Autoridad Marítima, debido a que el lugar del naufragio presentaba rocas de gran tamaño a baja profundidad y exposición al Norte; condiciones de situación riesgosas ante los pronósticos climáticos adversos para los días posteriores al siniestro. Esta decisión operacional evitó que la nave sufriera daños estructurales que afectasen a sus estanques de combustibles, con los consiguientes riesgos de derrame, contaminación del cuerpo de agua circundante y potencial daño ambiental.</p>
+        </div>
+  
+  
+        <div class="col-md-6 col-xl-4">
+          <h5 class="font-weight-normal"><a class="dark-grey-text" href="#">ANTECEDENTES</a></h5>
+          <p class="small grey-text">Preliminares </p>
+        </div>
+  
+        <div class="col-md-6">
+          <p class="text-muted mb-5 pb-2">Previo a la visita de inspección ambiental, recopile información operacional de las medidas tomadas por la empresa Oxxean los días anterior. De acuerdo con la bitácora de la empresa Oxxean presto apoyo a la embarcación con materiales para la contención de hidrocarburos; 300m barreras, 60 mangas absorbentes, 6.000 paños, 1 skimer, 2 estanques flotantes de almacenamiento de 12,5m3 c/u, equipos de reparaciones (planchas, soldadora, masilla submarina y otros elementos de sellado, ROV para ver el fondo del lugar, bombas de achique y buzos. Todo lo anterior permitió, contener los momentos mas criticos de la emergencia, dada la posición de la embarcación y su exposición a los vientos y las condiciones climáticas adversas. Posterior a estas primeras maniobras, fue posible transportar a un lugar mas seguro la embarcación. </p>
+        </div>
+  
+  
+        <div class="col-md-6 col-xl-4">
+          <p class="small grey-text">In situ</p>
+        </div>
+  
+        <div class="col-md-6">
+          <p class="text-muted mb-5 pb-2">El siguiente informe corresponde a las operaciones de prevención y control de la contaminación por el varamiento de la M/N Coyhaique, CAS484. La nave se situaba en la localidad de Puerto Laguna (distante a 20 kilómetros en línea recta desde Puerto Aguirre), fondeada en sitio de unos 27 m de profundidad, al momento del arribo del suscrito al área de trabajo. Las condiciones meteorológicas en el lugar, durante todo el proceso de inspección, se caracterizaron por presentar cielos cubiertos, bajas temperaturas del aire, precipitaciones y vientos del Norte de más de 20 m/s. La nave corresponde a una embarcación de transporte de carga de 9000 toneladas aproximadamente, la que al momento del naufragio llevaba a bordo: camiones con combustible diésel, camiones con aceite de pescado, camiones con redes de centros de cultivos, camiones con ganado (250 cabezas), camiones con alimento congelado, camiones con ensilaje, camiones con boyas, camiones con materiales de la construcción y vehículos, entre otros. Además, la M/N almacenaba en sus estanques de combustible, 150 ton (densidad 0,97) de diésel e IFO (Intermediate Fuel Oil), equivalente a 150m3 de este hidrocarburo, 60 y 113, respectivamente. En el perímetro de la M/N “Coyhaique” dos naves de la Armada controlaban el acceso al sector. Por otro lado, en la misma área se encontraban embarcación de la empresa OSR Litoral a cargo del despliegue de materiales y procedimiento para la contención de potenciales derrames de hidrocarburos al mar, un remolcador de la empresa SAAM la cual daba la estabilidad a la M/N “Coyhaique” y dos naves menores de apoyo a las faenas de buceo, alimentación, y retiro de ganado. Entre estas operaciones, la empresa Oxxean era la encargada de la asistencia a la nave siniestrada, mediante la reparación de su casco a través del trabajo de un equipo conformado con personal profesional en buceo, enfermero, paramédico, prevención de riesgos y medioambiente, y mediante el uso de motobombas para el achique, embarcaciones menores de apoyo y ROV submarino, entre otros materiales y equipo especializado. Fue posible ingresar desde la cubierta superior hasta la cubierta principal de la M/N “Coyhaique” (la cual se encontraba sin energía y sin iluminación General), en un sector donde se estaba sellando la escotilla de acceso a la bodega de autos. </p>
+        </div>
+
+
+        <div class="col-md-6 col-xl-4">
+          <h5 class="font-weight-normal"><a class="dark-grey-text" href="#">RESIDUOS Y PRODUCTOS POTENCIALMENTE CONTAMINANTES</a></h5>
+
+ 
+        </div>
+  
+        <div class="col-md-6">
+          <p class="text-muted mb-5 pb-2"> Los principales residuos contenidos al interior de la M/N “Coyhaique”, en términos de cantidad (volumen) corresponden a mezclas oleosas formadas por hidrocarburos y agua de mar en la cubierta inferior, sala de máquinas y ciertas trazas de estas aguas negras en la cubierta principal. Por otro lado, los residuos orgánicos provenientes del ganado vivo y muerto acumulados en la cubierta superior, se transformó en otra potencial fuente de contaminación. Para prevenir este efecto, se rescató el 80% del ganado gracias a las rápidas y efectivas medidas de contingencia del personal capacitado de OXXEAN. El ganado sobreviviente se les mantuvo con el suministro agua y forraje supervisado por un veterinario a bordo más personal de asistencia proveniente de zonas rurales, los que conocen de manera empírica no formal el manejo de este tipo de animales.  La carga aún contenida en la nave siniestrada, pueden constituirse en factores de riesgo ambiental y de bioseguridad, en particular, los aceites, redes, alimentos, combustibles, vehículos, materiales de la construcción, entre otros, por lo que su manejo debe mantenerse de manera segura, tal como fue observado durante la inspección. </p>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <h5 class="font-weight-normal"><a class="dark-grey-text" href="#">APRECIACIÓN </a></h5>
+
+ 
+        </div>
+  
+        <div class="col-md-6">
+          <p class="text-muted mb-5 pb-2"> Los riesgos de contaminación asociados al siniestro de la M/N “Coyhaique”, han sido controlados de manera efectiva por las operaciones de rescate desplegadas por Oxxean, personal de la nave, la Autoridad Marítima, OSR Litoral y otros servicios complementarios.  En las siguientes etapas de este proceso se debe procurar por el retiro seguro de todos los combustibles contenidos en estanques de la nave y de las mezclas oleosas acumuladas en sus compartimentos y salas inundadas. Con similares criterios, efectuar el retiro de los residuos orgánicos generados por el ganado y todos los otros elementos y productos transportados como carga. Bajo esta forma de operación se evitará la contaminación del cuerpo de agua circundante, cumpliendo con las regulaciones ambientales establecidas en la Ley Navegación (D.L. N 2.222/1978) y Reglamento para el Control de la Contaminación Acuática (D.S. N 1/1992). Estos planes deben considerar también el manejo posterior adecuado de los residuos o productos para su correcta disposición final, cumpliendo con el Código Sanitario y sus reglamentos completarlos, y los demás instrumentos de gestión ambiental que apliquen para estos procesos.</p>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <h5 class="font-weight-normal"><a class="dark-grey-text" href="#">INFERENCIAS </a></h5>
+
+ 
+        </div>
+  
+        <div class="col-md-6">
+          <p class="text-muted mb-5 pb-2">Lo que se evito con las medidas de contención y operacionales fueron los potenciales riesgos aledaños o susceptibilidad de afectación a;<br>
+            <br>•	Zona de Interés Turístico Aysén – Patagonia – Queulat. 
+            <br>•	Centro de Cultivo de Salmones Moraleda propiedad de la empresa Australis Mar
+            <br>•	Pesca artesanal y cultivo de mitìlidos de los lugareños. 
+            <br>•	Posible Daño Ambiental del lugar donde varo la embarcación. 
+            </p>
+        </div>
+  
+  
+      </div>
+      <div id="map-container-google-1" class="z-depth-1-half map-container-section " height="300px" >
+        <iframe src="https://maps.google.com/maps?q=Corral&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+        style="border:0" allowfullscreen></iframe>
+        </div>
+    </section>
+  </div>
+  
+
+
+
+
+<div class="container-fluid card z-depth-1 my-5 p-5">
+<div class="text-center justify-content-center">
+<h3>Imagen Nativa</h3>
+<h6>Sin compresión</h6>
+<div class="">
+<div class="row">
+<div class="col-md-12 mb-3">
+<img src="{% static '/img/SOAR-02.jpg' %}" class="img-fluid z-depth-1" alt="Responsive image">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-4 col-md-12 mb-3">
+<img src="{% static '/img/SOAR-01.jpg' %}" class="img-fluid z-depth-1"
+alt="Responsive image">
+</div>
+<div class="col-lg-4 col-md-6 mb-3">
+<img src="{% static '/img/dji_0016.jpg' %}" class="img-fluid z-depth-1"
+alt="Responsive image">
+</div>
+<div class="col-lg-4 col-md-6 mb-3">
+<img src="{% static '/img/dji_0021.jpg' %}" class="img-fluid z-depth-1"
+alt="Responsive image">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="carousel container-fluid mt-3 mb-5">
+<div class="container-fluid card z-depth-1 my-5 p-5">
+<div class="text-center justify-content-center">
+<h3>Video</h3>
+<h6>Mov / Mp4</h6>
+<section class="bg-primary z-depth-1">
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+<iframe id="player2" class="embed-responsive-item" src="https://www.youtube.com/embed/7MUISDJ5ZZ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
+<div class="row no-gutters">
+<div class="col-lg-6 order-md-2">
+<div class="view">
+<img class="img-fluid" src="{% static '/img/dji_0021.jpg' %}" alt="Video title">
+<div class="mask flex-center rgba-black-light">
+<a id="play" class="btn-floating btn-primary btn-lg" data-toggle="modal" data-target="#modal1"><i class="fas fa-play"></i></a>
+</div>
+</div>
+</div>
+<div class="col-lg-6 mx-auto d-flex align-items-center text-white">
+<div class="view">
+<img class="img-fluid" src="{% static '/img/dji_0023.jpg' %}" alt="Video title">
+<div class="mask flex-center rgba-black-light">
+<a id="play" class="btn-floating btn-primary btn-lg" data-toggle="modal" data-target="#modal1"><i class="fas fa-play"></i></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+
+
+
+
+
+<link href="https://codictados.com/public/dics/min/dics.min.css" rel="stylesheet">
+<div class="container-fluid card z-depth-1 my-5 p-5">
+<div class="text-center justify-content-center">
+<h3> Comparación</h3>
+<h6>Avances de obras</h6>
+<!-- Grid row -->
+<div class="row">
+<!-- Grid column -->
+<div class="col-md-12 mb-3">
+<div class="b-dics" >
+<img src="https://juxtapose.knightlab.com/static/img/Sochi_11April2005.jpg" alt="2005" />
+<img src="https://juxtapose.knightlab.com/static/img/Sochi_22Nov2013.jpg" alt="2013" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://codictados.com/public/dics/min/dics.min.js"></script>
+<script>
+new Dics({
+container: document.querySelector(".b-dics"),
+textPosition: "top"
+});
+</script>
+
+
+
+
+<link href="https://vjs.zencdn.net/5.10.4/video-js.css" rel="stylesheet">
+<link href="https://cdn.rawgit.com/yanwsh/videojs-panorama/master/dist/videojs-panorama.css" rel="stylesheet">
+<style>
+.player-wrapper {
+position: relative;
+width: 100%;
+height: 60vh;
+}
+.player-wrapper .player {
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+}
+</style>
+<div class="container-fluid card z-depth-1 my-5 p-5">
+<div class="text-center justify-content-center">
+<h3>Video Inmersivo</h3>
+<h6>360 + VR + Zoom</h6>
+<!-- Grid row -->
+<div class="row">
+<div class="player-wrapper">
+<video id="player" class="player video-js vjs-default-skin vjs-big-play-centered" crossorigin="anonymous" preload="metadata" autoplay controls>
+<source poster="https://raw.githubusercontent.com/Pierrinho/elephant/master/elephant.jpg" src="https://bitmovin.com/player-content/playhouse-vr/progressive.mp4">
+</video>
+</div>
+</div>
+</div>
+</div>
+<script src="https://vjs.zencdn.net/5.10.4/video.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r76/three.js"></script>
+<script src="https://rawgit.com/yanwsh/videojs-panorama/master/dist/videojs-panorama.v5.js"></script>
+<script>
+var options = {
+plugins: {
+panorama: {
+clickAndDrag: true,
+clickToToggle: true,
+autoMobileOrientation: true,
+backToVerticalCenter: false,
+backToHorizonCenter: false
+}
+}
+};
+var player = videojs('player', options, function() {
+});
+</script>
+
+
+
+
+
+
+<div class="container-fluid card z-depth-1 my-5 p-5">
+<div class="text-center justify-content-center">
+<h3>Panorámica</h3>
+<h6>Recorrido + 360 + Zoom + Keys</h6>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+<style>
+#panorama {
+width: 100%;
+height: 600px;
+}
+</style>
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {   
+"default": {
+"firstScene": "circle",
+"autoLoad": true,
+"sceneFadeDuration": 1000,
+"compass": true,
+"northOffset": 247.5,
+"autoRotate": -2
+},
+
+"scenes": {
+
+
+"circle": {
+"title": "Observatorio Alma - Chile",
+"hfov": 110,
+"pitch": -3,
+"yaw": 117,
+"type": "equirectangular",
+"panorama": "https://pannellum.org/images/alma.jpg",
+"hotSpots": [
+{
+"pitch": -2.1,
+"yaw": 132.9,
+"type": "scene",
+"text": "Cerro toco - Chile",
+"sceneId": "house"
+}
+]
+},
+
+"house": {
+"title": "Cerro toco - Chile",
+"hfov": 110,
+"yaw": 5,
+"type": "equirectangular",
+"panorama": "https://pannellum.org/images/cerro-toco-0.jpg",
+"hotSpots": [
+{
+"pitch": -0.6,
+"yaw": 37.1,
+"type": "scene",
+"text": "Observatorio Alma - Chile",
+"sceneId": "circle",
+"targetYaw": -23,
+"targetPitch": 2
+}
+]
+}
+}
+});
+</script>
+</div>
+</div>
+
+<!-- Timeline CSS -->
+<style>
+  .timeline-main .stepper.stepper-vertical.timeline li a {
+    padding: 0px 24px;
+    left: 50%;
+  }
+
+  @media (max-width: 450px) {
+    .timeline-main .stepper.stepper-vertical.timeline li a {
+      left: 6%;
+    }
+  }
+
+  @media (min-width: 451px) and (max-width: 1025px) {
+    .timeline-main .stepper.stepper-vertical.timeline li a {
+      left: 6%;
+    }
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline li a .circle {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    margin-left: -50px;
+    background-color: #ccc;
+    z-index: 2;
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline li .step-content {
+    width: 45%;
+    float: left;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    position: relative;
+  }
+
+  @media (max-width: 450px) {
+    .timeline-main .stepper.stepper-vertical.timeline li .step-content {
+      width: 80%;
+      left: 3rem;
+      margin-right: 3rem;
+      margin-bottom: 2rem;
+      float: right;
+    }
+  }
+
+  @media (min-width: 451px) and (max-width: 1025px) {
+    .timeline-main .stepper.stepper-vertical.timeline li .step-content {
+      width: 85%;
+      left: 3rem;
+      margin-right: 3rem;
+      margin-bottom: 2rem;
+      float: right;
+    }
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline li .step-content:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #e0e0e0;
+    border-right: 0 solid #e0e0e0;
+    border-bottom: 15px solid transparent;
+    content: " ";
+  }
+
+  @media (max-width: 450px) {
+    .timeline-main .stepper.stepper-vertical.timeline li .step-content:before {
+      border-left-width: 0;
+      border-right-width: 15px;
+      left: -15px;
+      right: auto;
+    }
+  }
+
+  @media (min-width: 451px) and (max-width: 1025px) {
+    .timeline-main .stepper.stepper-vertical.timeline li .step-content:before {
+      border-left-width: 0;
+      border-right-width: 15px;
+      left: -15px;
+      right: auto;
+    }
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline li .step-content:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+  }
+
+  @media (max-width: 450px) {
+    .timeline-main .stepper.stepper-vertical.timeline li .step-content:after {
+      border-left-width: 0;
+      border-right-width: 14px;
+      left: -14px;
+      right: auto;
+    }
+  }
+
+  @media (min-width: 451px) and (max-width: 1025px) {
+    .timeline-main .stepper.stepper-vertical.timeline li .step-content:after {
+      border-left-width: 0;
+      border-right-width: 14px;
+      left: -14px;
+      right: auto;
+    }
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline li.timeline-inverted {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline li.timeline-inverted .step-content {
+    float: right;
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline li.timeline-inverted .step-content:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline li.timeline-inverted .step-content:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline li:not(:last-child):after {
+    content: " ";
+    position: absolute;
+    width: 3px;
+    background-color: #e0e0e0;
+    left: 50%;
+    top: 65px;
+    margin-left: -1.5px;
+  }
+
+  @media (max-width: 450px) {
+    .timeline-main .stepper.stepper-vertical.timeline li:not(:last-child):after {
+      left: 6%;
+    }
+  }
+
+  @media (min-width: 451px) and (max-width: 1025px) {
+    .timeline-main .stepper.stepper-vertical.timeline li:not(:last-child):after {
+      left: 6%;
+    }
+  }
+
+  @media (max-width: 1025px) {
+    .timeline-main .stepper.stepper-vertical.timeline li {
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+    }
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.colorful-timeline li .step-content:before {
+    top: 1rem;
+    border-left: 15px solid #D32F2F;
+    border-right: 0 solid #D32F2F;
+  }
+
+  @media (max-width: 450px) {
+    .timeline-main .stepper.stepper-vertical.timeline.colorful-timeline li .step-content:before {
+      border-left-width: 0;
+      border-right-width: 15px;
+      left: -15px;
+      right: auto;
+    }
+  }
+
+  @media (min-width: 451px) and (max-width: 1025px) {
+    .timeline-main .stepper.stepper-vertical.timeline.colorful-timeline li .step-content:before {
+      border-left-width: 0;
+      border-right-width: 15px;
+      left: -15px;
+      right: auto;
+    }
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.colorful-timeline li .step-content:after {
+    top: 1rem;
+    border-left: 14px solid #D32F2F;
+    border-right: 0 solid #D32F2F;
+  }
+
+  @media (max-width: 450px) {
+    .timeline-main .stepper.stepper-vertical.timeline.colorful-timeline li .step-content:after {
+      border-left-width: 0;
+      border-right-width: 14px;
+      left: -14px;
+      right: auto;
+    }
+  }
+
+  @media (min-width: 451px) and (max-width: 1025px) {
+    .timeline-main .stepper.stepper-vertical.timeline.colorful-timeline li .step-content:after {
+      border-left-width: 0;
+      border-right-width: 14px;
+      left: -14px;
+      right: auto;
+    }
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.colorful-timeline li .step-content .timeline-header {
+    -webkit-border-top-left-radius: 2px;
+    border-top-left-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.colorful-timeline li.timeline-inverted .step-content:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.colorful-timeline li.timeline-inverted .step-content:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.colorful-timeline li:not(:last-child):after {
+    background-color: #D32F2F;
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.timeline-animated .more-padding {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.timeline-animated li {
+    -webkit-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li a {
+    padding: 0px;
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li a .circle {
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    margin-left: -12px;
+    background-color: #ccc;
+    z-index: 2;
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li .step-content {
+    width: 45%;
+    float: left;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    position: relative;
+  }
+
+  @media (max-width: 450px) {
+    .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li .step-content {
+      width: 80%;
+      left: 3rem;
+      margin-right: 3rem;
+      margin-bottom: 2rem;
+      float: right;
+    }
+  }
+
+  @media (min-width: 451px) and (max-width: 1025px) {
+    .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li .step-content {
+      width: 85%;
+      left: 3rem;
+      margin-right: 3rem;
+      margin-bottom: 2rem;
+      float: right;
+    }
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li .step-content:before {
+    position: absolute;
+    top: 15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #e0e0e0;
+    border-right: 0 solid #e0e0e0;
+    border-bottom: 15px solid transparent;
+    content: " ";
+  }
+
+  @media (max-width: 450px) {
+    .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li .step-content:before {
+      border-left-width: 0;
+      border-right-width: 15px;
+      left: -15px;
+      right: auto;
+    }
+  }
+
+  @media (min-width: 451px) and (max-width: 1025px) {
+    .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li .step-content:before {
+      border-left-width: 0;
+      border-right-width: 15px;
+      left: -15px;
+      right: auto;
+    }
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li .step-content:after {
+    position: absolute;
+    top: 15px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+  }
+
+  @media (max-width: 450px) {
+    .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li .step-content:after {
+      border-left-width: 0;
+      border-right-width: 14px;
+      left: -14px;
+      right: auto;
+    }
+  }
+
+  @media (min-width: 451px) and (max-width: 1025px) {
+    .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li .step-content:after {
+      border-left-width: 0;
+      border-right-width: 14px;
+      left: -14px;
+      right: auto;
+    }
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li .step-content.hoverable {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li .step-content.hoverable:hover {
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li:not(:last-child):after {
+    width: 2px;
+    background-color: #9e9e9e;
+    top: 32px;
+    height: 100%;
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li.timeline-inverted .step-content:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li.timeline-inverted .step-content:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.timeline-images li a .circle {
+    font-size: 1rem;
+  }
+
+  .timeline-main .stepper.stepper-vertical.timeline.timeline-images li:not(:last-child):after {
+    background-color: #26c6da;
+  }
+
+  @media (max-width: 450px) {
+
+    .timeline-main .stepper.stepper-vertical.timeline.timeline-basic li a,
+    .timeline-main .stepper.stepper-vertical.timeline.colorful-timeline li a,
+    .timeline-main .stepper.stepper-vertical.timeline.timeline-animated li a {
+      left: 8%;
+    }
+  }
+
+  @media (max-width: 450px) {
+
+    .timeline-main .stepper.stepper-vertical.timeline.timeline-basic li a .circle,
+    .timeline-main .stepper.stepper-vertical.timeline.colorful-timeline li a .circle,
+    .timeline-main .stepper.stepper-vertical.timeline.timeline-animated li a .circle {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-size: .9em;
+      top: 26px;
+      margin-left: -35px;
+    }
+  }
+
+  @media (max-width: 450px) {
+
+    .timeline-main .stepper.stepper-vertical.timeline.timeline-basic li:not(:last-child):after,
+    .timeline-main .stepper.stepper-vertical.timeline.colorful-timeline li:not(:last-child):after,
+    .timeline-main .stepper.stepper-vertical.timeline.timeline-animated li:not(:last-child):after {
+      left: 9%;
+      height: 100%;
+      top: 55px;
+    }
+  }
+
+  @media (max-width: 450px) {
+
+    .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li a,
+    .timeline-main .stepper.stepper-vertical.timeline.timeline-images li a {
+      left: 10%;
+    }
+  }
+
+  @media (max-width: 450px) {
+
+    .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li a .circle,
+    .timeline-main .stepper.stepper-vertical.timeline.timeline-images li a .circle {
+      top: 18px;
+    }
+  }
+
+  @media (max-width: 450px) {
+
+    .timeline-main .stepper.stepper-vertical.timeline.timeline-simple li:not(:last-child):after,
+    .timeline-main .stepper.stepper-vertical.timeline.timeline-images li:not(:last-child):after {
+      left: 10%;
+    }
+  }
+
+
+  .timeline-main .timeline-light {
+    list-style: none;
+    padding-left: 1em;
+    line-height: 1.5em;
+    font-size: 20px;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item {
+    position: relative;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item .timeline-light-item-tail {
+    position: absolute;
+    border-left: 2px solid #E8E8E8;
+    height: 100%;
+    width: 0;
+    bottom: 0;
+    left: 14px;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item .timeline-light-item-head {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 15px;
+    bottom: 4px;
+    transform: translate(-50%, 0);
+    border: 2px solid #1890FF;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 1;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item .timeline-light-item-content {
+    margin-left: 30px;
+    padding-top: 0.2em;
+    line-height: 2.6em;
+    height: 2em;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-primary .timeline-light-item-head {
+    border-color: #4285f4;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-danger .timeline-light-item-head {
+    border-color: #ff3547;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-warning .timeline-light-item-head {
+    border-color: #ffbb33;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-success .timeline-light-item-head {
+    border-color: #00c851;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-info .timeline-light-item-head {
+    border-color: #33b5e5;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-default .timeline-light-item-head {
+    border-color: #2bbbad;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-secondary .timeline-light-item-head {
+    border-color: #aa66cc;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-elegant .timeline-light-item-head {
+    border-color: #2e2e2e;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-unique .timeline-light-item-head {
+    border-color: #880e4f;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-dark-green .timeline-light-item-head {
+    border-color: #388e3c;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-mdb-color .timeline-light-item-head {
+    border-color: #59698d;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-red .timeline-light-item-head {
+    border-color: #d32f2f;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-pink .timeline-light-item-head {
+    border-color: #ec407a;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-purple .timeline-light-item-head {
+    border-color: #8e24aa;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-deep-purple .timeline-light-item-head {
+    border-color: #512da8;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-indigo .timeline-light-item-head {
+    border-color: #3f51b5;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-blue .timeline-light-item-head {
+    border-color: #1976d2;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-light-blue .timeline-light-item-head {
+    border-color: #82b1ff;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-cyan .timeline-light-item-head {
+    border-color: #00bcd4;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-teal .timeline-light-item-head {
+    border-color: #00796b;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-green .timeline-light-item-head {
+    border-color: #388e3c;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-light-green .timeline-light-item-head {
+    border-color: #8bc34a;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-lime .timeline-light-item-head {
+    border-color: #afb42b;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-yellow .timeline-light-item-head {
+    border-color: #fbc02d;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-amber .timeline-light-item-head {
+    border-color: #ffa000;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-orange .timeline-light-item-head {
+    border-color: #f57c00;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-deep-orange .timeline-light-item-head {
+    border-color: #ff7043;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-brown .timeline-light-item-head {
+    border-color: #795548;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-grey .timeline-light-item-head {
+    border-color: #616161;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-blue-grey .timeline-light-item-head {
+    border-color: #78909c;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-dark .timeline-light-item-head {
+    border-color: #212121;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-light .timeline-light-item-head {
+    border-color: #e0e0e0;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-white .timeline-light-item-head {
+    border-color: #fff;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-black .timeline-light-item-head {
+    border-color: #000;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-loading .timeline-light-item-head {
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    animation: tl-v2-loadingCircle 1s 1s infinite linear;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-icon .timeline-light-item-head {
+    border: none;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-icon .timeline-light-item-tail {
+    height: 100%;
+    bottom: 15px;
+    left: 14px;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-icon .timeline-light-item-head {
+    font-size: 20px;
+    top: 40%;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-icon .timeline-light-item-head i {
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  .timeline-main .timeline-light .timeline-light-item-dashed .timeline-light-item-tail {
+    border-left-style: dashed;
+  }
+
+  .timeline-main .timeline-light li:first-child.timeline-light-item .timeline-light-item-tail {
+    height: 0;
+  }
+
+  @keyframes tl-v2-loadingCircle {
+    0% {
+      transform: translate(-50%, 0) rotate(0deg);
+    }
+
+    100% {
+      transform: translate(-50%, 0) rotate(360deg);
+    }
+  }
+</style>
+<link rel="stylesheet" src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/css/timeline.min.css">
+<link href="css/addons-pro/timeline.css" rel="stylesheet">
+<!-- Timeline CSS - minified-->
+<link href="css/addons-pro/timeline.min.css" rel="stylesheet">
+<section class="container-fluid card z-depth-1 my-5 p-5">
+  <div class="text-center justify-content-center">
+  <h3>Linea de Tiempo</h3>
+  <h6> Ordenar y explicar cronológicamente procesos o acontecimientos </h6>
+
+<!-- Timeline -->
+<div class="row">
+  <div class="col-md-12">
+    <div class="timeline-main">
+      <!-- Timeline Wrapper -->
+      <ul class="stepper stepper-vertical timeline timeline-simple timeline-images pl-0">
+
+        <li>
+          <!--Section Title -->
+          <a href="#!">
+            <span class="circle cyan lighten-1">1</span>
+          </a>
+
+          <!-- Section Description -->
+          <div class="step-content ml-3 p-0 hoverable">
+            <img src="https://www.centralsanpedro.cl/wp-content/uploads/2014/09/110.png" class="img-fluid"
+              alt="Responsive image">
+            <h4 class="font-weight-bold pt-3 pb-2 mb-0">2007</h4>
+            <!--<p class="text-muted px-4 mb-0"><i class="far fa-clock" aria-hidden="true"></i> 2015</p>-->
+            <p class="mb-0  pl-4 pr-4 pb-4">Octubre: Colbún ingresó el Estudio de Impacto Ambiental (EIA) del proyecto al Servicio de Evaluación Ambiental (SEA)</p>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <!--Section Title -->
+          <a href="#!">
+            <span class="circle cyan lighten-1">2</span>
+          </a>
+
+          <!-- Section Description -->
+          <div class="step-content mr-xl-3 p-0 hoverable">
+            <img src="https://www.centralsanpedro.cl/wp-content/uploads/2014/09/21.png" class="img-fluid"
+              alt="Responsive image">
+              <h4 class="font-weight-bold pt-3 pb-2 mb-0">2008</h4>
+              <!--<p class="text-muted px-4 mb-0"><i class="far fa-clock" aria-hidden="true"></i> 2015</p>-->
+              <p class="mb-0  pl-4 pr-4 pb-4">Octubre: el proyecto obtuvo la aprobación de su Estudio de Impacto Ambiental mediante la Resolución de Calificación Ambiental (RCA) N°118.</p>
+          </div>
+        </li>
+        <li>
+          <!--Section Title -->
+          <a href="#!">
+            <span class="circle cyan lighten-1">3</span>
+          </a>
+
+          <!-- Section Description -->
+          <div class="step-content ml-3 p-0 hoverable">
+            <img src="https://www.centralsanpedro.cl/wp-content/uploads/2014/09/DSC_6080-988x371.jpg" class="img-fluid"
+              alt="Responsive image">
+              <h4 class="font-weight-bold pt-3 pb-2 mb-0">2009</h4>
+              <!--<p class="text-muted px-4 mb-0"><i class="far fa-clock" aria-hidden="true"></i> 2015</p>-->
+              <p class="mb-0  pl-4 pr-4 pb-4">Enero: se iniciaron las obras de construcción del proyecto (caminos de acceso y túneles de desvío). Julio: mediante la RCA N°58 se aprobó la adecuación de las obras presentada al Sistema de Evaluación Ambiental (SEA). Comenzó la habilitación y equipamiento de la playa de Panguipulli.</p>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <!--Section Title -->
+          <a href="#!">
+            <span class="circle cyan lighten-1">4</span>
+          </a>
+
+          <!-- Section Description -->
+          <div class="step-content mr-xl-3 p-0 hoverable">
+            <img src="https://www.centralsanpedro.cl/wp-content/uploads/2014/09/DSC_6104-988x371.jpg" class="img-fluid"
+              alt="Responsive image">
+              <h4 class="font-weight-bold pt-3 pb-2 mb-0">2010</h4>
+              <!--<p class="text-muted px-4 mb-0"><i class="far fa-clock" aria-hidden="true"></i> 2015</p>-->
+              <p class="mb-0  pl-4 pr-4 pb-4">Con el objetivo de complementar la información sobre el terreno del proyecto, a mediados de este año se realizaron sondajes e instrumentación adicionales.</p>
+          </div>
+        </li>
+        <li>
+            <li>
+              <!--Section Title -->
+              <a href="#!">
+                <span class="circle cyan lighten-1">5</span>
+              </a>
+    
+              <!-- Section Description -->
+              <div class="step-content ml-3 p-0 hoverable">
+                <img src="https://www.centralsanpedro.cl/wp-content/uploads/2014/09/2011.jpg" class="img-fluid"
+                  alt="Responsive image">
+                  <h4 class="font-weight-bold pt-3 pb-2 mb-0">2011</h4>
+                  <!--<p class="text-muted px-4 mb-0"><i class="far fa-clock" aria-hidden="true"></i> 2015</p>-->
+                  <p class="mb-0  pl-4 pr-4 pb-4">Febrero: las obras constructivas, que llevaban un 15% de avance, se suspendieron temporalmente con el objeto de realizar estudios geológicos adicionales y así adecuar algunas de las obras a las condiciones particulares del terreno. Junio: comenzó la remodelación de la Plaza de Coñaripe, la cual finalizó en agosto del mismo año.</p>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <!--Section Title -->
+              <a href="#!">
+                <span class="circle cyan lighten-1">6</span>
+              </a>
+    
+              <!-- Section Description -->
+              <div class="step-content mr-xl-3 p-0 hoverable">
+                <img src="https://www.centralsanpedro.cl/wp-content/uploads/2014/09/DSC_5765-988x371.jpg" class="img-fluid"
+                  alt="Responsive image">
+                  <h4 class="font-weight-bold pt-3 pb-2 mb-0">2012</h4>
+                  <!--<p class="text-muted px-4 mb-0"><i class="far fa-clock" aria-hidden="true"></i> 2015</p>-->
+                  <p class="mb-0  pl-4 pr-4 pb-4">Enero-septiembre: construcción del Terminal de Buses de Los Lagos. Marzo-septiembre: edificación del Centro de información Turística de Los Lagos. Abril-junio: construcción del Portal Panguipulli.</p>
+              </div>
+            </li>
+            <li>
+              <li>
+                <!--Section Title -->
+                <a href="#!">
+                  <span class="circle cyan lighten-1">7</span>
+                </a>
+      
+                <!-- Section Description -->
+                <div class="step-content ml-3 p-0 hoverable">
+                  <img src="https://www.centralsanpedro.cl/wp-content/uploads/2014/09/DSC_6413-988x371.jpg" class="img-fluid"
+                    alt="Responsive image">
+                    <h4 class="font-weight-bold pt-3 pb-2 mb-0">2013</h4>
+                    <!--<p class="text-muted px-4 mb-0"><i class="far fa-clock" aria-hidden="true"></i> 2015</p>-->
+                    <p class="mb-0  pl-4 pr-4 pb-4">Septiembre: inicio de obras de construcción del Balneario Riñihue.</p>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <!--Section Title -->
+                <a href="#!">
+                  <span class="circle cyan lighten-1">8</span>
+                </a>
+      
+                <!-- Section Description -->
+                <div class="step-content mr-xl-3 p-0 hoverable">
+                  <img src="https://www.centralsanpedro.cl/wp-content/uploads/2014/09/DSC_6211-988x371.jpg" class="img-fluid"
+                    alt="Responsive image">
+                    <h4 class="font-weight-bold pt-3 pb-2 mb-0">2014</h4>
+                    <!--<p class="text-muted px-4 mb-0"><i class="far fa-clock" aria-hidden="true"></i> 2015</p>-->
+                    <p class="mb-0  pl-4 pr-4 pb-4">Tras concluir los estudios geológicos, Colbún inició un proceso de información y socialización a las autoridades y comunidades sobre las adecuaciones del proyecto. Marzo: culminación obras Balneario Riñihue. Marzo-septiembre: construcción Centro de Información Turística de Panguipulli.</p>
+                </div>
+              </li>
+              <li>
+              	                <a href="#!">
+                  <span class="circle cyan lighten-1">9</span>
+                </a>
+            <!-- Section Description -->
+            <div class="step-content ml-3 p-0 hoverable">
+              <img src="https://www.centralsanpedro.cl/wp-content/uploads/2014/09/historia-2015-988x371.jpg" class="img-fluid"
+                alt="Responsive image">
+                <h4 class="font-weight-bold pt-3 pb-2 mb-0">2015</h4>
+                <!--<p class="text-muted px-4 mb-0"><i class="far fa-clock" aria-hidden="true"></i> 2015</p>-->
+                <p class="mb-0  pl-4 pr-4 pb-4">Colbún ingresó las adecuaciones del proyecto San Pedro al Sistema de Evaluación de Impacto Ambiental mediante un Estudio de Impacto Ambiental (EIA). Se crean las Mesas de Turismo en Panguipulli y Los Lagos, integrada cada una por más de una docena de organizaciones locales, con el fin de promover el turismo local. Comienzan Mesas de Trabajo con Comunidades Indígenas cercanas al proyecto.</p>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <!--Section Title -->
+            <a href="#!">
+              <span class="circle cyan lighten-1">10</span>
+            </a>
+  
+            <!-- Section Description -->
+            <div class="step-content mr-xl-3 p-0 hoverable">
+              <img src="https://www.centralsanpedro.cl/wp-content/uploads/2014/09/historia-2016-988x371.jpg" class="img-fluid"
+                alt="Responsive image">
+                <h4 class="font-weight-bold pt-3 pb-2 mb-0">2016</h4>
+                <!--<p class="text-muted px-4 mb-0"><i class="far fa-clock" aria-hidden="true"></i> 2015</p>-->
+                <p class="mb-0  pl-4 pr-4 pb-4">Se firman convenios de cooperación mutua con Comunidades Indígenas cercanas al proyecto San Pedro. Colbún desarrolla estudios técnicos con la finalidad de responder a las observaciones planteadas por servicios de evaluación respecto de las modificaciones del proyecto San Pedro. Mesa de Turismo de organizaciones comunales de Los Lagos impulsa infraestructura turística, inaugurando miradores y otras obras de infraestructura en dicha comuna.</p>
+            </div>
+          </li>
+          <li>
+          <!--Section Title -->
+          <a href="#!">
+            <span class="circle cyan lighten-1">11</span>
+          </a>
+
+          <!-- Section Description -->
+          <div class="step-content ml-3 p-0 hoverable">
+            <img src="https://www.centralsanpedro.cl/wp-content/uploads/2014/09/historia-2017-988x371.jpg" class="img-fluid"
+              alt="Responsive image">
+              <h4 class="font-weight-bold pt-3 pb-2 mb-0">2017</h4>
+              <!--<p class="text-muted px-4 mb-0"><i class="far fa-clock" aria-hidden="true"></i> 2015</p>-->
+              <p class="mb-0  pl-4 pr-4 pb-4">Mesas de Turismo comienzan trabajo para elaborar Políticas de Fomento Turístico local en Los Lagos y en Panguipulli. Colbún desarrolla estudios técnicos con la finalidad de responder a las observaciones planteadas por servicios de evaluación respecto de las modificaciones del proyecto San Pedro.</p>
+          </div>
+        </li>
+      </ul>
+      <!-- Timeline Wrapper -->
+    </div>
+  </div>
+</div>
+<!-- Timeline -->
+</div>
+</secction>
+<!-- Timeline JS -->
+<script type="text/javascript" src="js/addons-pro/timeline.js"></script>
+
+</main>
+
+
+<canvas style="display:none;" id="lineChart" height="175"></canvas>
+<script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap431.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+
+  <script>
+
+    // SideNav Initialization
+    $(".button-collapse").sideNav();
+
+    var container = document.querySelector('.custom-scrollbar');
+    Ps.initialize(container, {
+      wheelSpeed: 2,
+      wheelPropagation: true,
+      minScrollbarLength: 20
+    });
+
+    // Data Picker Initialization
+    $('.datepicker').pickadate();
+
+    // Material Select Initialization
+    $(document).ready(function () {
+      $('.mdb-select').material_select();
+    });
+
+    // Tooltips Initialization
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+  </script>
+
+  <!-- Charts -->
+  <script>
+
+    // Small chart
+    $(function () {
+      $('.min-chart#chart-sales').easyPieChart({
+        barColor: "#FF5252",
+        onStep: function (from, to, percent) {
+          $(this.el).find('.percent').text(Math.round(percent));
+        }
+      });
+    });
+
+    // Main chart
+    var ctxL = document.getElementById("lineChart").getContext('2d');
+    var myLineChart = new Chart(ctxL, {
+      type: 'line',
+      data: {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [{
+          label: "My First dataset",
+          fillColor: "#fff",
+          backgroundColor: 'rgba(255, 255, 255, .3)',
+          borderColor: 'rgba(255, 255, 255)',
+          data: [0, 10, 5, 2, 20, 30, 45],
+        }]
+      },
+      options: {
+        legend: {
+          labels: {
+            fontColor: "#fff",
+          }
+        },
+        scales: {
+          xAxes: [{
+            gridLines: {
+              display: true,
+              color: "rgba(255,255,255,.25)"
+            },
+            ticks: {
+              fontColor: "#fff",
+            },
+          }],
+          yAxes: [{
+            display: true,
+            gridLines: {
+              display: true,
+              color: "rgba(255,255,255,.25)"
+            },
+            ticks: {
+              fontColor: "#fff",
+            },
+          }],
+        }
+      }
+    });
+
+    $(function() {
+      $('#dark-mode').on('click', function (e) {
+
+        e.preventDefault();
+
+        $('footer, .card').toggleClass('dark-card-admin');
+        $('body, .navbar').toggleClass('white-skin navy-blue-skin');
+        $(this).toggleClass('white text-dark btn-outline-black');
+        $('body').toggleClass('dark-bg-admin');
+        $('h6, .card, p, td, th, i, li a, h4, input, label').not('#slide-out i, #slide-out a, .dropdown-item i, .dropdown-item').toggleClass('text-white');
+        $('.btn-dash').toggleClass('grey blue').toggleClass('lighten-3 darken-3');
+        $('.gradient-card-header').toggleClass('white black lighten-4');
+        $('.list-panel a').toggleClass('navy-blue-bg-a text-white').toggleClass('list-group-border');
+
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>

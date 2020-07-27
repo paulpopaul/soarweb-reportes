@@ -1,0 +1,672 @@
+
+
+{% load static %}
+<style>
+/*  Contacto  ----------------------------------------------------------*/
+/*  Contacto  ----------------------------------------------------------*/
+.get_in_tauch_area {
+padding-top: 146px; /*146*/
+padding-bottom: 160px; /*160*/
+max-width: 800px;
+justify-content: left;
+text-align: left;
+margin: 150px auto;
+border: 0.1px solid #40FFCE;
+border-radius: none;
+background: rgba(0,0,0,0.2);
+}
+
+.section_title h3 {
+font-size:22px;
+line-height: 0;
+font-weight: 800;
+color: #40FFCE;
+position: relative;
+z-index: 0;
+}
+.section_title p {
+position: relative;
+z-index: 3;
+font-size: 13px;
+font-weight: 400;
+color: #919191;
+margin-bottom: 19px;
+display: block;
+}
+
+.btn2 {
+background: #40FFCE;
+width: 100%;
+position: relative;
+padding: 15px;
+color: #000;
+cursor: pointer;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 3px;
+transition: all 500ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+font-weight: 600;
+overflow: hidden;
+border: 0.3px solid #1ECD97;
+text-decoration: none;
+}
+
+.btn-progress {
+width: 100%;
+color: transparent;
+}
+.btn-fill:after {
+content: '';
+background: #1ECD97;
+position: absolute;
+top: 0; left: 0;
+height: 100%;
+width: 100%;
+transform: scaleX(0);
+transform-origin: 0;
+display: block;
+animation: fill 3.2s linear forwards;
+}
+
+.btn-complete {
+padding: 10px;
+width: 50px;
+color: #fff;
+pointer-events: none;
+}
+.btn-complete:after {
+font-family: FontAwesome;
+content: "\f00c";
+color: #fff;
+height: 100%;
+padding-left: 3px;
+position: absolute;
+top: 0; left: 0; right: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #1ECD97;
+}
+
+@keyframes fill {
+from { transform: scaleX(0); }
+to { transform: scaleX(1); }
+}
+
+.get_in_tauch_area .touch_form .single_input input, .get_in_tauch_area .touch_form .single_input textarea {
+width: 100%;
+border: 0.1px solid #40FFCE;
+background: none;
+height: 50px;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+border-radius: 0;
+padding: 20px 16px;
+margin-bottom: 25px;
+color: #FFF;
+font-weight: 400;
+}
+.get_in_tauch_area .touch_form .single_input input::placeholder, .get_in_tauch_area .touch_form .single_input textarea::placeholder {
+color: #FFF;
+font-weight: 400;
+}
+.get_in_tauch_area .touch_form .single_input input:focus, .get_in_tauch_area .touch_form .single_input textarea:focus {
+outline: none;
+}
+.get_in_tauch_area .touch_form .single_input textarea {
+height: 148px;
+resize: none;
+}
+.get_in_tauch_area .touch_form .submit_btn .boxed-btn3 {
+width: 100%;
+text-align: center;
+}
+
+
+
+
+@media screen and (max-width:2880px) {
+.get_in_tauch_area {
+border: 0.1px solid #40FFCE;
+
+}
+.section_title h3 {
+font-size:66px;
+margin-bottom: 85px !important;
+text-transform: uppercase;
+padding-left: 207px;
+}
+.section_title p {
+width: 751px;;
+font-size: 32px;
+color: #fff;
+line-height: 48px;
+margin-bottom:66px !important;
+font-weight: 400;
+padding-left: 232px;
+}
+.get_in_tauch_area {
+padding-top: 300px; /*146*/
+padding-bottom: 300px; /*160*/
+max-width: 1440px;
+}
+.get_in_tauch_area .touch_form .single_input input{
+font-size:24px;
+margin-bottom: 15px;
+padding: 49px 29px;
+}
+.get_in_tauch_area .touch_form .single_input textarea {
+font-size:24px;
+height: 270px;
+margin-bottom: 15px;
+padding: 49px 29px;
+}
+.btn2 {
+padding: 32px;
+font-size: 26px;
+}
+.contacto-box{
+max-width: 798px;
+margin: 0 auto;
+}
+}
+
+
+@media screen and (max-width:2560px) {
+.get_in_tauch_area {
+border: 0.1px solid #40FFCE;
+
+}
+.section_title h3 {
+font-size:58px;
+margin-bottom: 85px !important;
+text-transform: uppercase;
+padding-left: 207px;
+}
+.section_title p {
+width: 721px;;
+font-size: 32px;
+color: #fff;
+line-height: 48px;
+margin-bottom:66px !important;
+font-weight: 400;
+padding-left: 207px;
+}
+.get_in_tauch_area {
+padding-top: 240px; /*146*/
+padding-bottom: 240px; /*160*/
+max-width: 1280px;
+}
+.get_in_tauch_area .touch_form .single_input input{
+font-size:24px;
+margin-bottom: 15px;
+padding: 49px 29px;
+}
+.get_in_tauch_area .touch_form .single_input textarea {
+font-size:24px;
+height: 270px;
+margin-bottom: 15px;
+padding: 49px 29px;
+}
+.btn2 {
+padding: 32px;
+font-size: 26px;
+}
+.contacto-box{
+max-width: 798px;
+margin: 0 auto;
+}
+}
+
+@media screen and (max-width:1920px) {
+.get_in_tauch_area {
+border: 0.1px solid #40FFCE;
+
+}
+.section_title h3 {
+font-size:48px;
+margin-bottom: 70px !important;
+text-transform: uppercase;
+padding-left: 181px;
+}
+.section_title p {
+width: 571px;;
+font-size: 25px;
+color: #fff;
+line-height: 28px;
+margin-bottom:63px !important;
+font-weight: 400;
+padding-left: 181px;
+}
+.get_in_tauch_area {
+padding-top: 220px; /*146*/
+padding-bottom: 240px; /*160*/
+max-width: 1130px;
+}
+.get_in_tauch_area .touch_form .single_input input{
+font-size:18px;
+margin-bottom: 15px;
+padding: 40px 16px;
+}
+.get_in_tauch_area .touch_form .single_input textarea {
+font-size:18px;
+height: 228px;
+margin-bottom: 15px;
+padding: 40px 16px;
+}
+.btn2 {
+padding: 26px;
+font-size: 18px;
+}
+.contacto-box{
+max-width: 635px;
+margin: 0 auto;
+}
+}
+
+@media screen and (max-width:1600px) {
+.get_in_tauch_area {
+border: 0.1px solid #40FFCE;
+}
+.section_title h3 {
+font-size:32px;
+margin-bottom: 42px !important;
+text-transform: uppercase;
+padding-left: 125px;
+}
+.section_title p {
+    width: 393px;
+font-size: 17px;
+color: #fff;
+line-height: 28px;
+margin-bottom: 42px !important;
+font-weight: 400;
+padding-left: 125px;
+}
+.get_in_tauch_area {
+padding-top: 170px; /*146*/
+padding-bottom: 170px; /*160*/
+max-width: 800px;
+}
+.get_in_tauch_area .touch_form .single_input input{
+font-size:12px;
+margin-bottom: 9px;
+padding: 20px 10px;
+}
+.get_in_tauch_area .touch_form .single_input textarea {
+font-size:12px;
+height: 148px;
+margin-bottom: 9px;
+padding: 20px 10px;
+}
+.btn2 {
+padding: 15px;
+font-size: 13px;
+}
+.contacto-box{
+max-width: 479px;
+margin: 0 auto;
+}
+}
+
+
+@media screen and (max-width:1366px) {
+.get_in_tauch_area {
+border: 0.1px solid #40FFCE;
+}
+
+.section_title h3 {
+font-size:30px;
+margin-bottom: 42px !important;
+text-transform: uppercase;
+padding-left: 125px;
+}
+
+.section_title p {
+width: 393px;
+font-size: 17px;
+color: #fff;
+line-height: 28px;
+margin-bottom: 42px !important;
+font-weight: 400;
+padding-left: 125px;
+}
+.get_in_tauch_area {
+padding-top: 170px; /*146*/
+padding-bottom: 170px; /*160*/
+max-width: 800px;
+}
+.get_in_tauch_area .touch_form .single_input input{
+font-size:12px;
+margin-bottom: 9px;
+padding: 20px 10px;
+}
+.get_in_tauch_area .touch_form .single_input textarea {
+font-size:12px;
+height: 148px;
+margin-bottom: 9px;
+padding: 20px 10px;
+}
+.btn2 {
+padding: 15px;
+font-size: 13px;
+}
+.contacto-box{
+max-width: 479px;
+margin: 0 auto;
+}
+}
+                
+@media screen and (max-width:1280px) {
+.get_in_tauch_area {
+border: 0.1px solid #40FFCE;
+}
+
+.section_title h3 {
+font-size:32px;
+margin-bottom: 42px !important;
+text-transform: uppercase;
+padding-left: 125px;
+}
+
+.section_title p {
+width: 393px;
+font-size: 17px;
+color: #fff;
+line-height: 28px;
+margin-bottom: 42px !important;
+font-weight: 400;
+padding-left: 125px;
+}
+
+.get_in_tauch_area {
+padding-top: 170px; /*146*/
+padding-bottom: 170px; /*160*/
+max-width: 800px;
+}
+
+.get_in_tauch_area .touch_form .single_input input{
+font-size:12px;
+margin-bottom: 9px;
+padding: 20px 10px;
+}
+
+.get_in_tauch_area .touch_form .single_input textarea {
+font-size:12px;
+height: 148px;
+margin-bottom: 9px;
+padding: 20px 10px;
+}
+
+.btn2 {
+padding: 15px;
+font-size: 13px;
+}
+
+.contacto-box{
+max-width: 479px;
+margin: 0 auto;
+}
+}
+
+@media screen and (max-width:1024px) {
+.get_in_tauch_area {
+border: 0.1px solid #40FFCE;
+}
+.section_title h3 {
+font-size:44px;
+margin-bottom: 66px !important;
+text-transform: uppercase;
+padding-left:0;
+}
+.section_title p {
+width: 296px;
+font-size: 19px;
+
+
+
+color: #fff;
+line-height: 28px;
+margin-bottom: 62px !important;
+font-weight: 400;
+padding-left:0;
+}
+.get_in_tauch_area {
+padding-top: 170px; /*146*/
+padding-bottom: 170px; /*160*/
+max-width: 800px;
+}
+.get_in_tauch_area .touch_form .single_input input{
+font-size:15px;
+margin-bottom: 9px;
+padding: 33px 17px;
+}
+.get_in_tauch_area .touch_form .single_input textarea {
+font-size:15px;
+height: 174px;
+margin-bottom: 9px;
+padding: 33px 17px;
+}
+.btn2 {
+padding: 19px;
+font-size: 16px;
+}
+.contacto-box{
+max-width: 518px;
+margin: 0 auto;
+}
+}
+
+@media screen and (max-width:834px) {
+.get_in_tauch_area {
+max-width: 694px;
+border:none;
+}
+.contacto-box{
+max-width: 518px;
+}
+}
+
+@media screen and (max-width:768px) {
+.get_in_tauch_area {
+    max-width: 784px;
+width: 760px;
+}
+.section_title h3 {
+font-size:36px;
+margin-bottom: 52px !important;
+}
+.section_title p {
+width: 313px;
+font-size: 19px;
+margin-bottom: 45px !important;
+}
+.get_in_tauch_area {
+padding-top: 180px; /*146*/
+padding-bottom: 180px; /*160*/
+margin: 0 auto;
+}
+.get_in_tauch_area .touch_form .single_input input{
+font-size:15px;
+margin-bottom: 9px;
+padding: 33px 17px;
+}
+.get_in_tauch_area .touch_form .single_input textarea {
+font-size:15px;
+height: 174px;
+margin-bottom: 9px;
+padding: 33px 17px;
+}
+.btn2 {
+padding: 19px;
+font-size: 15px;
+}
+}
+
+@media screen and (max-width:414px) {
+.get_in_tauch_area {
+  
+width: 329px;
+border:none;
+}
+
+.section_title h3 {
+font-size:25px;
+margin-bottom: 42px !important;
+}
+.section_title p {
+width: 237px;
+font-size: 15px;
+}
+
+.get_in_tauch_area .touch_form .single_input input{
+margin-bottom: 6px;
+padding: 12px 13px;
+font-size:11px;
+
+}
+.get_in_tauch_area .touch_form .single_input textarea {
+margin-bottom: 7px;
+padding: 12px 13px;
+height: 130px;
+font-size:11px;
+}
+
+.btn2 {
+padding: 15px;
+font-size: 11px;
+}
+.contacto-box{
+margin-left:0;
+}
+}
+
+@media screen and (max-width:375px) {
+.get_in_tauch_area {
+width: 328px;
+}
+}
+
+@media screen and (max-width:320px) {
+.get_in_tauch_area {
+width: 275px;
+}
+.section_title h3 {
+font-size:22px;
+}
+.section_title p {
+font-size: 14px;
+}
+.get_in_tauch_area .touch_form .single_input input{
+font-size:11px;
+}
+.get_in_tauch_area .touch_form .single_input textarea {
+font-size:11px;
+}
+.btn2 {
+font-size: 10px;
+}
+}
+
+</style>
+<section>
+    <div class="get_in_tauch_area" id="contactar-btn">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-8"> 
+                    <div class="section_title contacto-box ">
+                        <h3 class="">Hablemos</h3>
+                        <p class="" >Escríbenos y nos comunicaremos contigo a la brevedad.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-8 contacto-box ">
+                    {% if form.is_valid == False %}
+                    <form action="" method="post">
+                    {% csrf_token %}
+                        <div class="touch_form " id="Contact">
+                            <div class="row">
+                                <div class="col-md-6 col-6">
+                                    <div class="single_input">
+                                        {{ form.first_name }}
+                                    </div>
+                                    {{ form.first_name.errors }}
+                                </div>
+                                <div class="col-md-6 col-6">
+                                    <div class="single_input">
+                                        {{ form.last_name }}
+                                    </div>
+                                    {{ form.last_name.errors }}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-6">
+                                    <div class="single_input">
+                                        {{ form.email }}
+                                    </div>
+                                    {{ form.email.errors }}
+                                </div>
+                                <div class="col-md-6 col-6">
+                                    <div class="single_input">
+                                        {{ form.phone }}
+                                    </div>
+                                    {{ form.phone.errors }}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="single_input">
+                                        {{ form.message }}
+                                    </div>
+                                    {{ form.message.errors }}
+                                </div>
+                            </div>
+                        </div>
+                        <button class=" btn2" type="submit" id="post-form">Enviar</button>
+                    </form>
+                {% elif form.is_valid == True %}
+                    <h3 class="title center-align">'Mensaje enviado :)'</h3>
+                {% else %}
+                    <script>
+                        function contacto() {
+                            window.location = "/";
+                        }
+                        setTimeout("contacto()", 1);
+                    </script>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+// Submit post on submit
+$('#post-form').on('submit', function(event){
+event.preventDefault();
+alert("form submitted!")  // sanity check
+});
+
+$(function() {
+var btn2 = $(".btn2");
+
+btn2.on("click", function() {
+
+$(this).addClass('btn-progress');
+setTimeout(function() {
+btn2.addClass('btn-fill')
+}, 1500);
+
+setTimeout(function() {
+btn2.removeClass('btn-fill')
+}, 6000);
+
+setTimeout(function() {
+btn2.addClass('btn-complete')
+}, 6000);
+
+setTimeout(function() {
+window.location = "/";
+},12000)
+});
+})
+</script>

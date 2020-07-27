@@ -1,0 +1,500 @@
+{% load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'css/animate.css' %}" rel="stylesheet">
+<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+
+<style>
+body{
+    background: #9D9EA3;
+background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+background-blend-mode: normal, lighten, soft-light;
+font-family:'Lucida Grande', sans-serif;
+color:#0A192E;
+}
+
+.card-container {
+-webkit-perspective: 800px;
+-moz-perspective: 800px;
+-o-perspective: 800px;
+perspective: 800px;
+background: #fff;
+position:absolute;
+left:0; right:0;
+top:0; bottom:0;
+margin:auto;
+max-width:100%;
+max-height:100%;
+overflow:auto;
+}
+
+.card-container:not(.manual-flip):hover .card,
+.card-container.hover.manual-flip .card{
+-webkit-transform: rotateY( 180deg );
+-moz-transform: rotateY( 180deg );
+-o-transform: rotateY( 180deg );
+transform: rotateY( 180deg );
+}
+
+
+.card-container.static:hover .card,
+.card-container.static.hover .card {
+	-webkit-transform: none;
+-moz-transform: none;
+ -o-transform: none;
+    transform: none;
+}
+
+.card {
+-webkit-transition: -webkit-transform .5s;
+-moz-transition: -moz-transform .5s;
+-o-transition: -o-transform .5s;
+transition: transform .5s;
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+-o-transform-style: preserve-3d;
+transform-style: preserve-3d;
+}
+
+.front, .back {
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-o-backface-visibility: hidden;
+backface-visibility: hidden;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.front {
+z-index: 2;
+}
+
+.back {
+-webkit-transform: rotateY( 180deg );
+-moz-transform: rotateY( 180deg );
+-o-transform: rotateY( 180deg );
+transform: rotateY( 180deg );
+z-index: 3;
+
+}
+
+.back .btn-simple{
+position: absolute;
+left: 0;
+bottom: 4px;
+}
+
+.card{
+border: none;
+    
+}
+.card-container, .front, .back {
+width: 320px;
+height: 570px;
+border-radius: 16px;
+}
+
+@keyframes zoom {
+from {
+-moz-transform: scale(1);
+transform: scale(1);
+transform-origin: top;
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.0, M12=1, M21=0, M22=1.0, SizingMethod='auto expand')";
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.0, M12=1, M21=0, M22=1.0, SizingMethod='auto expand');
+}
+to {
+-moz-transform: scale(1.5);
+transform: scale(1.5);
+transform-origin: top;
+-webkit-transform: scale(1.5);
+-ms-transform: scale(1.5);
+-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=1, M21=0, M22=1.5, SizingMethod='auto expand')";
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=1, M21=0, M22=1.5, SizingMethod='auto expand');
+}
+}
+.card .cover{
+max-width:100%;
+max-height:100%;
+overflow:hidden;
+border-radius: 16px;
+backface-visibility: hidden;
+transform: translate(0px, 0px)!important;
+}
+
+
+
+.card .cover .back-cover{
+    
+    background-attachment: fixed;
+width: 100%; position: relative;
+backface-visibility: hidden;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+-webkit-transform-origin: center center;
+-ms-transform-origin: center center;
+-moz-transform-origin: center center;
+transform-origin: center center;
+-webkit-animation: zoom 30s ease-in-out infinite alternate;
+-moz-animation: zoom 30s ease-in-out infinite alternate;
+-o-animation: zoom 30s ease-in-out infinite alternate;
+-ms-animation: zoom 30s ease-in-out infinite alternate;
+animation: zoom 30s ease-in-out infinite alternate;
+}
+
+.card .content{
+background-color: rgba(0, 0, 0, 0);
+box-shadow: none;
+margin: 31px;
+}
+
+.card .footer {
+float:right;
+}
+
+.card .footer .btn-simple{
+}
+
+.btn-simple{
+opacity: .8;
+background-color: transparent;
+}
+
+.btn-simple:hover,
+.btn-simple:focus{
+background-color: transparent;
+box-shadow: none;
+opacity: 1;
+}
+.btn-simple i{
+font-size: 16px;
+color:#000;
+}
+
+.idcard-box{
+width: 320px;
+height: 570px;
+background-image: linear-gradient(120deg, #ffffff 0%, #ebedee 100%);
+position:absolute;
+left:0; right:0;
+top:0; bottom:0;
+margin:auto;
+max-width:100%;
+max-height:100%;
+overflow:auto;
+border-radius: 16px;
+box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08)
+}
+
+.id-container-box{
+z-index: 2;
+margin: 31px;
+}
+
+.idcard-qr-box{
+width: 100%;
+overflow: auto;
+}
+
+.idcard-qr-box img{
+float:right;
+width: 68px;
+}
+
+.idcard-logo-box{
+width: 100%;
+height: 136px;
+overflow: auto;
+}
+
+.idcard-logo-box img{
+width: 152px;
+position: absolute;
+top: 110px;
+left: 14px;
+}
+
+.idcard-name-detail{
+font-size: 19px;
+font-weight: 600;
+margin: 0;
+}
+
+.idcard-job-detail{
+font-size: 15px;
+font-weight: 400;
+color:#BBBBBB;
+}
+
+.idcard-initial-text{
+color:#D63EDC;
+font-weight: 600;
+font-size: 14px;
+margin: 0;
+padding-right: 2px;
+}
+
+.idcard-initial-text a{
+color:#0A192E;
+font-weight: 400;
+font-size: 14px;
+}
+
+.idcard-initial-text a span{
+color:#8B8B8B;
+font-weight: 400;
+}
+
+.idcard-separate-one{
+padding-bottom: 16px;
+}
+
+.idcard-separate-two{
+padding: 10px 0;
+}
+
+.idcard-footer-button-box{
+background: rgb(230,230,230);
+width: 320px;
+height: 90px;
+position:absolute;
+left:0; right:0;
+top:480px; bottom:0;
+margin:auto;
+max-width:100%;
+max-height:100%;
+overflow:auto;
+border-radius: 0 0 16px 16px;
+text-align: center;
+padding:28px 0;
+}
+
+.idcard-footer-button-box a{
+font-weight: 400;
+font-size: 12px;
+color:#0A192E;
+}
+</style>
+
+
+
+<div class="card-container manual-flip">
+    <div class="card">
+        <div class="front">
+            <div class="content">
+                <div class="idcard-qr-box animated fadein delay-1000ms">
+                    <a target="_blank" href="{{idcard.website}}"><img src="{% static 'img/idcard/codeqr.svg' %}"></a>
+                </div>
+        
+                <div class="idcard-logo-box">
+                    <img class="animated fadeinleft delay-400ms" src="{% static 'img/idcard/logosoar-01.svg' %}">
+                </div>
+        
+                <div class="idcard-separate-one animated fadein delay-600ms">
+                    <h4 class="idcard-name-detail">{{idcard.first_name}} {{idcard.last_name}}</h4>
+                    <p class="idcard-job-detail">{{idcard.job }}</p>
+                </div>
+        
+                <div class="idcard-separate-two animated fadein delay-800ms">
+                    <p class="idcard-initial-text">T: <a class="" href="tel:{{idcard.phone}}"><span>+569 </span>{{idcard.phone|slice:"4:12"}}</a></p>
+                    <p class="idcard-initial-text">M: <a class="" href="mailto:{{idcard.email}}"><span>{{idcard.first_name|lower}}</span>@soar.cl</a></p>
+                </div> 
+        
+                <div class="idcard-separate-two animated fadein delay-1000ms">
+                    <p class="idcard-initial-text">C: <a class="" href=""><span>Valdivia</span> · Chile</a></p>
+                    <p class="idcard-initial-text">W: <a class="" target="_blank" href="{{idcard.website}}"><span>www</span>.soar.<span>cl</span></a></p>
+                </div>
+                <div class="idcard-footer-button-box ">
+                    <a target="_blank" class="btn btn-outline-light animated fadeinup 1s" href="{{idcard.imagen.url}}" download="{{idcard.imagen}}"><i class="fa fa-download"></i> Descargar</a>
+                    <a class="btn btn-outline-light animated fadeinup 2s" onclick="CopyLink()" href="#"><i class="fa fa-link"></i> Copiar Link</a>
+                </div>
+                <div class="footer animated fadein delay-1000ms">
+                    <a class="idcard-front-rotar-box-lf scroll-down-box" onclick="rotateCard(this)">
+                    <p><i class="scroll-down" aria-hidden="true"></i> </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="back ">
+        <div class="cover">
+            <img class="back-cover"src="https://images.hdqwalls.com/download/ios-11-stock-original-4k-ij-1125x2436.jpg"/>
+            <div class="footer">
+                <a class="idcard-front-rotar-box-rg" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                    <i class="scroll-down" aria-hidden="true"></i>
+                </a>
+                <div class="idcard-rotar-logo-box-rg">
+                    <img class="" src="{% static 'img/idcard/logosoar-02.svg' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+function copyTextToClipboard(text) {
+var textArea = document.createElement("textarea");
+textArea.style.position = 'fixed';
+textArea.style.top = 0;
+textArea.style.left = 0;
+textArea.style.width = '2em';
+textArea.style.height = '2em';
+textArea.style.padding = 0;
+textArea.style.border = 'none';
+textArea.style.outline = 'none';
+textArea.style.boxShadow = 'none';
+textArea.style.background = 'transparent';
+textArea.value = text;
+document.body.appendChild(textArea);
+textArea.select();
+try {
+var successful = document.execCommand('copy');
+var msg = successful ? 'successful' : 'unsuccessful';
+console.log('Copying text command was ' + msg);
+} catch (err) {
+console.log('Oops, unable to copy');
+}
+document.body.removeChild(textArea);
+}
+function CopyLink() {
+copyTextToClipboard(location.href);
+}
+</script>
+
+<script>
+$().ready(function(){
+$('[rel="tooltip"]').tooltip();
+
+});
+
+function rotateCard(btn){
+var $card = $(btn).closest('.card-container');
+console.log($card);
+if($card.hasClass('hover')){
+$card.removeClass('hover');
+} else {
+$card.addClass('hover');
+}
+}
+</script>
+
+<style>
+.idcard-front-rotar-box-lf{
+float:right;
+position: absolute;
+right: 26px;
+bottom: 111px;
+transform: rotate(270deg);
+border: 1px solid #E8E8E8;
+padding: 9px;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+}
+.idcard-rotar-logo-box-rg{
+width: 125px;
+position: absolute;
+top: 22px;
+right: 17px;
+}
+.idcard-front-rotar-box-rg{
+float: right;
+position: absolute;
+left: 25px;
+bottom: 21px;
+transform: rotate(90deg);
+border: 2px solid #E8E8E8;
+padding: 9px;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+}
+.scroll-down-box{
+text-align: center;
+}
+.scroll-down:before,
+.scroll-down:after {
+content: '';
+display: flex;
+margin: 0 auto;
+width: 7px;
+height: 7px;
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+border-bottom: 2px solid #000;
+border-right: 2px solid #000;
+}
+.scroll-down:before {
+-webkit-animation: down-arrow-before 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+animation: down-arrow-before 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+.scroll-down:after {
+-webkit-animation: down-arrow-after 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+animation: down-arrow-after 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+@-webkit-keyframes down-arrow-before {
+50% {
+-webkit-transform: rotate(45deg) translate(70%, 70%);
+transform: rotate(45deg) translate(70%, 70%);
+}
+100% {
+-webkit-transform: rotate(45deg) translate(70%, 70%);
+transform: rotate(45deg) translate(70%, 70%);
+}
+}
+@keyframes down-arrow-before {
+50% {
+-webkit-transform: rotate(45deg) translate(70%, 70%);
+transform: rotate(45deg) translate(70%, 70%);
+}
+100% {
+-webkit-transform: rotate(45deg) translate(70%, 70%);
+transform: rotate(45deg) translate(70%, 70%);
+}
+}
+
+@-webkit-keyframes down-arrow-after {
+50% {
+-webkit-transform: rotate(45deg) translate(110%, 110%);
+transform: rotate(45deg) translate(110%, 110%);
+opacity: 0;
+}
+51% {
+-webkit-transform: rotate(45deg) translate(-130%, -130%);
+transform: rotate(45deg) translate(-130%, -130%);
+}
+100% {
+-webkit-transform: rotate(45deg) translate(-70%, -70%);
+transform: rotate(45deg) translate(-70%, -70%);
+opacity: 1;
+}
+}
+@keyframes down-arrow-after {
+50% {
+-webkit-transform: rotate(45deg) translate(110%, 110%);
+transform: rotate(45deg) translate(110%, 110%);
+opacity: 0;
+}
+51% {
+-webkit-transform: rotate(45deg) translate(-130%, -130%);
+transform: rotate(45deg) translate(-130%, -130%);
+}
+100% {
+-webkit-transform: rotate(45deg) translate(-70%, -70%);
+transform: rotate(45deg) translate(-70%, -70%);
+opacity: 1;
+}
+}
+</style>

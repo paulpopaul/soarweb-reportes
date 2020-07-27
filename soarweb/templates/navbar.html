@@ -1,0 +1,76 @@
+{% load static %}
+{% url 'home' as home %}
+{% url 'nosotros' as nosotros %}
+{% url 'servicios' as servicios %}
+{% url 'productos' as productos %}
+{% url 'equipamiento' as equipamiento %}
+{% url 'clientes' as clientes %}
+{% url 'rubros' as rubros %}
+{% url 'certificacion' as certificacion %}
+{% url 'responsabilidadsocial' as responsabilidadsocial %}
+{% url 'contacto' as contacto %}
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="{% static '/img/logo/logo-nav01-01.svg' %}" width="142px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    {% if request.user.is_authenticated %}
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav nav-flex-icons">
+        <li class="nav-item {% if request.path == home %} active {% endif %}">
+          <a class="nav-link" href="/home">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item {% if request.path == nosotros %} active {% endif %}">
+          <a class="nav-link" href="/nosotros">Nosotros </a>
+        </li>
+        <li class="nav-item {% if request.path == servicios %} active {% endif %}">
+          <a class="nav-link" href="/servicios">Servicios</a>
+        </li>
+        <li class="nav-item {% if request.path == productos %} active {% endif %}">
+          <a class="nav-link" href="/productos">Productos</a>
+        </li>
+        <li class="nav-item {% if request.path == equipamiento %} active {% endif %}">
+          <a class="nav-link" href="/equipamiento">Equipamiento</a>
+        </li>
+
+        <li class="nav-item {% if request.path == rubros %} active {% endif %}">
+          <a class="nav-link" href="/rubros">Rubros</a>
+        </li>
+        <li class="nav-item {% if request.path == certificacion %} active {% endif %}">
+          <a class="nav-link" href="/certificacion">Certificación</a>
+        </li>
+        <li class="nav-item {% if request.path == responsabilidadsocial %} active {% endif %}">
+          <a class="nav-link" href="/responsabilidadsocial">Responsabilidad Social</a>
+        </li>
+        <li class="nav-item {% if request.path == clientes %} active {% endif %}">
+          <a class="nav-link" href="/clientes">Clientes</a>
+        </li>
+        <li class="nav-item {% if request.path == contacto %} active {% endif %}">
+          <a class="nav-link" href="/contacto">Contacto</a>
+        </li>
+        <div class=" change-mode-wrapper">
+          <button class=" p-1 btn btn-outline-white btn-sm" id="dark-mode">Cambiar Modo</button>
+        </div>  
+            {% if request.user.is_authenticated %}
+            <li class="nav-item">
+
+              <a class="nav-link waves-effect" href="{% url 'account_logout' %}">
+                <span class="clearfix d-none d-sm-inline-block"> Salir </span>
+              </a>
+            </li>
+              {% else %}
+            {% endif %}
+
+        {% else %}
+        {% endif %}
+
+      </ul>
+    </div>
+  </div>
+</nav>
